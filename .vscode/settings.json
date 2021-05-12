@@ -23,4 +23,5 @@
    "workbench.colorTheme": "Monokai Pro",
    "editor.defaultFormatter": "HookyQR.beautify",
    "python.formatting.provider": "black",
+   "python.pythonPath": "c:\\Users\\YUsetr\\OneDrive\\Desktop\\milestone-4\\milestone-4\\.venv\\Scripts\\python.exe",
 }
