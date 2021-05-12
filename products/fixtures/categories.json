@@ -1,0 +1,67 @@
+[{
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "meat",
+            "friendly_name": "Meat"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "cheese",
+            "friendly_name": "Cheese"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "snacks_biscuits",
+            "friendly_name": "Snacks & Biscuits"
+        }
+    }, {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "cider",
+            "friendly_name": "Cider"
+        }
+    }, {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "beer",
+            "friendly_name": "Beer"
+        }
+    }, {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "soft_drinks",
+            "friendly_name": "Soft Drinks"
+        }
+    }, {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "hampers",
+            "friendly_name": "hampers"
+        }
+    }, {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "giftcards",
+            "friendly_name": "Giftcards"
+        }
+    }, {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
+        }
+    }
+]
