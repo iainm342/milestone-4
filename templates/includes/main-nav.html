@@ -19,10 +19,10 @@
                 Food
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="food-link">
-                <a href="" class="dropdown-item">Meat</a>
-                <a href="" class="dropdown-item">Cheese</a>
-                <a href="" class="dropdown-item">Snacks &amp; Biscuits</a>
-                <a href="" class="dropdown-item">All Food</a>
+                <a href="{% url 'products' %}?category=meat" class="dropdown-item">Meat</a>
+                <a href="{% url 'products' %}?category=cheese" class="dropdown-item">Cheese</a>
+                <a href="{% url 'products' %}?category=snacks_biscuits" class="dropdown-item">Snacks &amp; Biscuits</a>
+                <a href="{% url 'products' %}?category=meat,cheese,snacks_biscuits" class="dropdown-item">All Food</a>
             </div>
         </li>
 
@@ -32,10 +32,10 @@
                 Drink
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drink-link">
-                <a href="" class="dropdown-item">Cider</a>
-                <a href="" class="dropdown-item">Beer</a>
-                <a href="" class="dropdown-item">Soft Drinks</a>
-                <a href="" class="dropdown-item">All Drinks</a>
+                <a href="{% url 'products' %}?category=cider" class="dropdown-item">Cider</a>
+                <a href="{% url 'products' %}?category=beer" class="dropdown-item">Beer</a>
+                <a href="{% url 'products' %}?category=soft_drinks" class="dropdown-item">Soft Drinks</a>
+                <a href="{% url 'products' %}?category=cider,beer,soft_drinks" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
@@ -45,10 +45,10 @@
                 Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="offers-link">
-                <a href="" class="dropdown-item">Hampers</a>
-                <a href="" class="dropdown-item">Giftcards</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Offers</a>
+                <a href="{% url 'products' %}?category=hampers" class="dropdown-item">Hampers</a>
+                <a href="{% url 'products' %}?category=giftcards" class="dropdown-item">Giftcards</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=hampers,giftcards,clearance" class="dropdown-item">All Offers</a>
             </div>
         </li>
     </ul>
