@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -71,9 +72,6 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        {% if item.product.has_sizes %}
-                                        <input type="hidden" name="product_size" value="{{ item.size }}">
-                                        {% endif %}
                                     </div>
                                 </div>
                             </form>
@@ -81,7 +79,7 @@
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
                                 data-size="{{ item.size }}"><small>Remove</small></a>
                         <td class="py-3">
-                            <p class="my-0">£{{ item.product.price }}</p>
+                            <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
