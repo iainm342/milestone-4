@@ -1,0 +1,1 @@
+Deli SW Conifirmation for Order Number {{ order.order_number }}
