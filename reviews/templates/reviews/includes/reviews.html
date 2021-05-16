@@ -4,6 +4,13 @@
 
 <div class="container">
     <h3 class="text-uppercase text-center mt-5 mb-3">Reviews</h3>
+    <div class="text-center">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
     <div class="text-center mt-3">
         <button type="button" class="btn btn-outline-secondary rounded-0" data-toggle="modal"
             data-target="#reviewModal">
@@ -53,30 +60,5 @@
         {% endfor %}
     </div>
 </div>
-
-{% endblock %}
-
-{% block postloadjs %}
-
-<script type="text/javascript">
-    const starRating = document.querySelectorAll('.rating-stars');
-
-
-    starRating.forEach(rating => {
-        const ratingValue = parseInt(rating.getAttribute('data-value'));
-        const fullStar = ratingValue;
-        const emptyStar = 5 - fullStar;
-        let stars = '';
-
-        for (let i = 1; i < 6; i++) {
-            if (i <= fullStar) {
-                stars += `<i class="fas fa-star"></i>`;
-            } else {
-                stars += `<i class="far fa-star"></i>`;
-            }
-        }
-        rating.innerHTML = stars;
-    });
-</script>
 
 {% endblock %}
