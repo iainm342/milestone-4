@@ -33,4 +33,4 @@ def add_review(request, product_id):
         messages.error(request, 'Something went wrong. '
                                 'Make sure the form is valid.')
 
-    return redirect(reverse('product_details', args=(product_id,)))
+    return redirect(reverse('product_detail', args=(product.id,)))
