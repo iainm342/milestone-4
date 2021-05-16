@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="conatiner header-container"></div>
+<div class="row">
+    <div class="col">
+
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container h-100">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/cornwall.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=cornwall">Cornwall</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/devon.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=devon">Devon</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/dorset.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=dorset">Dorset</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/gloucester.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=gloucestershire">Gloucestershire</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/somerset.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=somerset">Somerset</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <img src="/media/wiltshire.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">
+                        <a href="{% url 'products' %}?q=wiltshire">Wiltshire</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
