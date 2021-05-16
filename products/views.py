@@ -4,6 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from reviews.models import Review
+from reviews.forms import ReviewForm
 from .forms import ProductForm
 
 # Create your views here.
@@ -41,10 +43,12 @@ def all_products(request):
         if "q" in request.GET:
             query = request.GET["q"]
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect(reverse("products"))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f"{sort}_{direction}"
@@ -63,9 +67,13 @@ def product_detail(request, product_id):
     """A view to show individual product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
+    review_form = ReviewForm()
 
     context = {
         "product": product,
+        "reviews": reviews,
+        "review_form": review_form,
     }
 
     return render(request, "products/product_detail.html", context)
