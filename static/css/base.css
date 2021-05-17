@@ -98,11 +98,6 @@ input[name="q"]::placeholder {
   color: #aab7c4;
 }
 
-.product-img {
-  width: 750px;
-  height: 750px;
-}
-
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
