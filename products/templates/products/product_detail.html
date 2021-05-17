@@ -95,7 +95,43 @@
         </div>
     </div>
 </div>
-{% include 'reviews/includes/reviews.html' %}
+<div class="container">
+    <h3 class="text-uppercase text-center mt-5 mb-3">Reviews</h3>
+    <!-- <div class="text-center">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    </div> -->
+    <div class="text-center mt-3">
+        <a href="{% url 'add_review' product.id %}" type="button" class="btn btn-outline-secondary rounded-0">
+            Add a Review
+        </a>
+    </div>
+</div>
+<div class="row mt-5">
+    {% for review in reviews %}
+    <div class="col-12 col-md-5 row p-3 m-3 border">
+        <div class="col-12 col-lg-4 text-center px-0">
+            <p class="mb-0 fw-bold text-uppercase">{{ review.title }}</p>
+            <p><small class="text-secondary">rating: </small>{{ review.rating }}</p>
+        </div>
+        <div class="col-12 col-lg-8">
+            <p>"{{ review.description }}"</p>
+            <div class="row">
+                <div class="col">
+                    <p class="text-end fst-italic text-secondary">-{{ review.user }}</p>
+                    <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"M d, Y" }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}

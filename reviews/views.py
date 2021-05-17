@@ -9,28 +9,33 @@ from profiles.models import UserProfile
 
 def add_review(request, product_id):
     """
-    Allow user to add a review and redirect them back to the
-    item product item view
+    Add a review to a product
     """
-    user = UserProfile.objects.get(user=request.user)
     product = get_object_or_404(Product, pk=product_id)
-    review_form = ReviewForm()
-    review_details = {
-        'title': request.POST['title'],
-        'description': request.POST['description'],
-        'rating': request.POST['rating'],
-    }
-    review_form = ReviewForm(review_details)
-
-    # If form is valid, add user and product and save
-    if review_form.is_valid():
-        review = review_form.save(commit=False)
-        review.user = user
-        review.product = product
-        review.save()
-        messages.success(request, 'Thank you! Your review was added')
+    user = get_object_or_404(UserProfile, user=request.user)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            title = form.cleaned_data['title']
+            description = form.cleaned_data['description']
+            rating = form.cleaned_data['rating']
+            Review.objects.create(
+                user=user,
+                product=get_object_or_404(Product, pk=product_id),
+                title=title,
+                rating=rating,
+                description=description)
+            messages.success(request, 'Successfully addded review.')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add product. \
+                    Please check the form is valid and try again.')
     else:
-        messages.error(request, 'Something went wrong. '
-                                'Make sure the form is valid.')
+        form = ReviewForm()
+    template = 'reviews/add_review.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
 
-    return redirect(reverse('product_detail', args=(product.id,)))
+    return render(request, template, context)
