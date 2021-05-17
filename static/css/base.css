@@ -21,8 +21,41 @@ body {
   width: 1.5rem;
 }
 
+.icon-color,
+.text-color {
+  color: #2b4162;
+}
+
+.text-blue {
+  color: #2b4162 !important;
+}
+
+.border-blue {
+  border: 2px solid #2b4162 !important;
+}
+
+.bg-blue {
+  background: #2b4162 !important;
+}
+
+.bg-red {
+  background: #721817 !important;
+}
+
+.logo-font {
+  font-family: "Bebas Neue";
+}
+
 .main-logo-link {
   width: fit-content;
+}
+
+.logo-color-1 {
+  color: #721817;
+}
+
+.logo-color-2 {
+  color: #2b4162;
 }
 
 .shop-now-button {
@@ -273,6 +306,10 @@ input[name="q"]::placeholder {
 
   .header-container {
     padding-top: 164px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    font-size: 1.5rem;
   }
 }
 
