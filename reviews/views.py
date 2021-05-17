@@ -54,10 +54,14 @@ def edit_review(request, review_id):
         messages.error(request, 'Failed to edit review. \
                 Please check the form is valid and try again.')
 
-    template = 'reviews/edit_review.html'
-    context = {
-        'form': form,
-        'review': review,
-    }
+    return redirect(reverse('product_detail', args=(review.product.id,)))
 
-    return render(request, template, context)
+
+def delete_review(request, review_id):
+    """
+    Delete a review for a product
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=(review.product.id,)))

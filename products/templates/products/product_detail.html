@@ -126,8 +126,8 @@
                     </p>
                     {% if request.user.is_authenticated %}
                     <small class="ml-3">
-                        <a href="{% url 'edit_review' review.id %}">Edit</a> |
-                        <a class="text-danger" href="">Delete</a>
+                        <a href="">Edit</a> |
+                        <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
                     </small>
                     {% endif %}
                 </div>
