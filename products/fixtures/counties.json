@@ -1,0 +1,50 @@
+[
+  {
+    "pk": 1,
+    "model": "products.county",
+    "fields": {
+      "name": "cornwall",
+      "friendly_name": "Cornwall"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.county",
+    "fields": {
+      "name": "devon",
+      "friendly_name": "Devon"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.county",
+    "fields": {
+      "name": "dorset",
+      "friendly_name": "Dorset"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.county",
+    "fields": {
+      "name": "glos",
+      "friendly_name": "Gloucestershire"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.county",
+    "fields": {
+      "name": "somerset",
+      "friendly_name": "Somerset"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.county",
+    "fields": {
+      "name": "wilts",
+      "friendly_name": "Wiltshire"
+    }
+  }
+]

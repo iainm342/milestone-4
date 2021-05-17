@@ -1,0 +1,16 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "0001",
+      "name": "Dorset Tea - Sunshine Black Tea Blend",
+      "county": 3,
+      "description": "We've blended the best quality Kenyan tea with the most flavoursome Rwandan leaves for a rich and bold black tea blend. We've also added a touch of malty Assam for an extra depth of flavour. Pack contains 80 biodegradable tea bags",
+      "price": 2.89,
+      "category": 6,
+      "rating": 4.6,
+      "image": "dorset-tea.jpg"
+    }
+  }
+]
