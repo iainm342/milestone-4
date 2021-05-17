@@ -25,10 +25,10 @@ def add_review(request, product_id):
                 title=title,
                 rating=rating,
                 description=description)
-            messages.success(request, 'Successfully addded review.')
-            return redirect(reverse('product_detail', args=[product.id]))
+            messages.success(request, 'Successfully added review.')
+            return redirect(reverse('product_detail', args=(product_id,)))
         else:
-            messages.error(request, 'Failed to add product. \
+            messages.error(request, 'Failed to add review. \
                     Please check the form is valid and try again.')
     else:
         form = ReviewForm()
@@ -36,6 +36,28 @@ def add_review(request, product_id):
     context = {
         'form': form,
         'product': product,
+    }
+
+    return render(request, template, context)
+
+
+def edit_review(request, review_id):
+    """
+    Edit a review to a product
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    form = ReviewForm(request.POST, instance=review)
+    if form.is_valid():
+        review.save()
+        messages.success(request, 'Successfully edited review.')
+    else:
+        messages.error(request, 'Failed to edit review. \
+                Please check the form is valid and try again.')
+
+    template = 'reviews/edit_review.html'
+    context = {
+        'form': form,
+        'review': review,
     }
 
     return render(request, template, context)

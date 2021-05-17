@@ -122,8 +122,14 @@
             <div class="row">
                 <div class="col">
                     <p class="text-end fst-italic text-secondary">-{{ review.user }}</p>
-                    <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"M d, Y" }}</small>
+                    <p class="text-secondary text-end mb-0"><small>{{ review.date_posted|date:"d M, Y" }}</small>
                     </p>
+                    {% if request.user.is_authenticated %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_review' review.id %}">Edit</a> |
+                        <a class="text-danger" href="">Delete</a>
+                    </small>
+                    {% endif %}
                 </div>
             </div>
         </div>
