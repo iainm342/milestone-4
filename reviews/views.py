@@ -61,6 +61,7 @@ def edit_review(request, review_id):
     context = {
         "form": form,
         "review": review,
+        "product": review.product,
     }
 
     return render(request, template, context)
