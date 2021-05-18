@@ -82,6 +82,7 @@ body {
 .btn-blue {
   background: #2b4162;
   color: white;
+  border: 1px solid #2b4162 !important;
 }
 
 .btn-blue:hover,
@@ -89,21 +90,28 @@ body {
 .btn-blue:focus {
   background: white;
   color: #2b4162;
+  border: 2px solid;
 }
 
-.btn-outline-black {
+.btn-outline-red {
   background: white;
-  color: black !important;
+  color: #721817 !important;
   /* use important to override link colors for <a> elements */
-  border: 1px solid black;
+  border: 1px solid #721817;
+}
+
+.btn-outline-red:hover,
+.btn-outline-red:active,
+.btn-outline-red:focus {
+  background: #721817;
+  color: white !important;
+  /* use important to override link colors for <a> elements */
+  border: 1px solid #721817;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-stand-out:hover,
-.btn-stand-out:active,
-.btn-stand-out:focus {
+.shop-now-button:focus {
   background: #f49f42;
   color: #fff;
 }
@@ -376,12 +384,12 @@ input[name="q"]::placeholder {
     font-size: 0.9rem;
   }
 
-  .btn.btn-outline-black.rounded-0,
+  .btn.btn-outline-red.rounded-0,
   .btn.btn-black.rounded-0 {
     padding: 0.375rem 0.375rem;
   }
 
-  .btn.btn-outline-black.rounded-0.btn-lg,
+  .btn.btn-outline-red.rounded-0.btn-lg,
   .btn.btn-black.rounded-0.btn-lg {
     padding: 0.375rem 0.375rem;
     font-size: 0.75rem;
