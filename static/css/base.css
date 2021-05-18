@@ -6,7 +6,8 @@ html {
 
 body {
   background: url("/media/map-sw.jpg") no-repeat center center fixed;
-  background-size: 80%;
+  padding-top: 50px;
+  background-size: 60%;
   height: calc(100vh - 164px);
   color: #555;
   font-family: "Montserrat";
