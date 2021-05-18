@@ -1,1 +1,1 @@
-web: gunicorn milestone-4-delisw.wsgi:application
+web: gunicorn milestone-4.wsgi:application
