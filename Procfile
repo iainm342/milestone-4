@@ -1,0 +1,1 @@
+web: gunicorn deli_sw.wsgi:application
