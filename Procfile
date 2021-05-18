@@ -1,0 +1,1 @@
+web: gunicorn milestone-4-delisw.wsgi:application
