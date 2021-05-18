@@ -152,6 +152,16 @@ input[name="q"]::placeholder {
   color: #aab7c4;
 }
 
+.county {
+  margin-top: 50px;
+}
+
+#card-text a {
+  font-family: "Benas Neue";
+  text-transform: uppercase;
+  color: #2b4162;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
