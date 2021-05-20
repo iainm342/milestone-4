@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, County
 from reviews.models import Review
 from reviews.forms import ReviewForm
 from .forms import ProductForm
@@ -17,6 +17,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    counties = None
     sort = None
     direction = None
 
@@ -40,6 +41,11 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if "county" in request.GET:
+            counties = request.GET["county"].split(",")
+            products = products.filter(county__name__in=counties)
+            counties = County.objects.filter(name__in=counties)
+
         if "q" in request.GET:
             query = request.GET["q"]
             if not query:
@@ -48,7 +54,7 @@ def all_products(request):
                 return redirect(reverse("products"))
 
             queries = Q(name__icontains=query) | Q(
-                description__icontains=query)
+                description__icontains=query) | Q(county__name__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f"{sort}_{direction}"
@@ -57,6 +63,7 @@ def all_products(request):
         "products": products,
         "search_term": query,
         "current_categories": categories,
+        "current_counties": counties,
         "current_sorting": current_sorting,
     }
 
