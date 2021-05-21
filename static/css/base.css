@@ -64,13 +64,30 @@ body {
 }
 
 .footer {
+  font-family: "Bebas Neue";
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #2b4162;
+  background-color: #721817;
   color: white;
   text-align: center;
+}
+
+a.email {
+  color: white;
+}
+
+.email:hover {
+  color: #2b4162;
+}
+
+a.social {
+  color: white;
+}
+
+a.social:hover {
+  color: #2b4162;
 }
 
 .shop-now-button {
