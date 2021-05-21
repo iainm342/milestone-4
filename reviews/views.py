@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import Review
 from .forms import ReviewForm
@@ -7,6 +8,7 @@ from products.models import Product
 from profiles.models import UserProfile
 
 
+@login_required
 def add_review(request, product_id):
     """
     Add a review to a product
@@ -41,6 +43,7 @@ def add_review(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_review(request, review_id):
     """
     Edit a review to a product
@@ -67,6 +70,7 @@ def edit_review(request, review_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_review(request, review_id):
     """
     Delete a review for a product
