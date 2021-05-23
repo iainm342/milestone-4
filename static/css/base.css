@@ -89,7 +89,7 @@ body {
 }
 
 #footer {
-  height: 20px;
+  height: 30px;
   transition-duration: 0.3s;
 }
 
@@ -202,12 +202,15 @@ input[name="q"]::placeholder {
   color: #aab7c4;
 }
 
-.county {
+.card-county {
   margin-top: 50px;
+  border: none;
+  height: 10rem;
 }
 
-#card-text a {
-  font-family: "Benas Neue";
+#card-text a,
+.county a {
+  font-family: "Bebas Neue";
   text-transform: uppercase;
   color: #2b4162;
 }
