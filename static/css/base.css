@@ -215,7 +215,8 @@ input[name="q"]::placeholder {
 }
 
 #card-text a,
-.county a {
+.county a,
+.county-name a {
   font-family: "Bebas Neue";
   text-transform: uppercase;
   color: #2b4162;
