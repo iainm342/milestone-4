@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  padding-top: 50px;
   background-size: 100%;
   height: calc(100vh - 164px);
   color: #555;
   font-family: "Montserrat";
+  padding-bottom: 100px;
 }
 
 .hero {
@@ -17,6 +17,10 @@ body {
   background-size: 100%;
   height: 80vh;
   width: 100%;
+}
+
+#layout {
+  padding-bottom: 220px;
 }
 
 /* from Bulma */
@@ -85,7 +89,7 @@ body {
 }
 
 #footer {
-  height: 50px;
+  height: 20px;
   transition-duration: 0.3s;
 }
 
