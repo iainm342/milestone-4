@@ -48,8 +48,8 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
-    "allauth.socialaccount.providers.facebook",
-    "allauth.socialaccount.providers.google",
+    # "allauth.socialaccount.providers.facebook",
+    # "allauth.socialaccount.providers.google",
     "home",
     "products",
     "bag",
@@ -63,26 +63,26 @@ INSTALLED_APPS = [
     "storages",
 ]
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
-    },
-    'facebook': {
-        'METHOD': 'oauth2',
-        'SCOPE': ['email'],
-        'AUTH_PARAMS': {
-            'auth_type': 'reauthenticate',
-        },
-        'LOCALE_FUNC': lambda request: 'en_US',
-        'VERSION': 'v2.4'
-    }
-}
+# SOCIALACCOUNT_PROVIDERS = {
+#     'google': {
+#         'SCOPE': [
+#             'profile',
+#             'email',
+#         ],
+#         'AUTH_PARAMS': {
+#             'access_type': 'online',
+#         }
+#     },
+#     'facebook': {
+#         'METHOD': 'oauth2',
+#         'SCOPE': ['email'],
+#         'AUTH_PARAMS': {
+#             'auth_type': 'reauthenticate',
+#         },
+#         'LOCALE_FUNC': lambda request: 'en_US',
+#         'VERSION': 'v2.4'
+#     }
+# }
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
