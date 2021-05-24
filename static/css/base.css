@@ -222,6 +222,11 @@ input[name="q"]::placeholder {
   color: #2b4162;
 }
 
+.event-card-img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

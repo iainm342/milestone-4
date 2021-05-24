@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.fields import NullBooleanField
 
 
 STATUS = (
@@ -15,6 +16,7 @@ class Post(models.Model):
         User, on_delete=models.CASCADE, related_name='event_posts')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
+    image = models.ImageField(null=True, blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
