@@ -1,12 +1,27 @@
-from django.views import generic
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Post
+from django.contrib import messages
 
 
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = "calendar.html"
+def post(request):
+
+    posts = Post.objects.all()
+
+    template = "events/events.html"
+    context = {
+        "posts": posts,
+    }
+
+    return render(request, template, context)
 
 
-class PostDetail(generic.DetailView):
-    model = Post
-    template_name = "post_detail.html"
+def post_detail(request, slug):
+
+    post = get_object_or_404(Post, slug=slug)
+
+    template = "events/post_detail.html"
+    context = {
+        "post": post,
+    }
+
+    return render(request, template, context)
