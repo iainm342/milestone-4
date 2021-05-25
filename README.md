@@ -192,6 +192,48 @@ The main aim of this website is to provide the **user** with an online delicates
 
 ## **DATABASE DESIGN** ##
 
+4 collections were used for the construction of the database in MongoDB.
+The collection used the most was **recipes** as it holds the majority of the information required to display information on the DOM.
+There are associations with the following:
+
+- **categories** to **recipes**
+  - category_name
+
+- **cookbooks** to **recipes**
+  - cookbook_name
+
+- **users** to **recipes**
+  - username
+
+### products app ###
+
+### category model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| Name | name  | CharField | max_length=254 |
+| Friendly Name | friendly_name | CharField | max_length=254 |
+
+### county model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| Name | name  | CharField | max_length=254 |
+| Friendly Name | friendly_name | CharField | max_length=254 |
+
+### product model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| Category | category  | ForeignKey | "Category", null=True, blank=True, on_delete=models.SET_NULL |
+| SKU | sku | CharField | max_length=254, null=True, blank=True |
+| Name | name | CharField | max_length=254 |
+| County | county | CharField | "County", null=True, blank=True, on_delete=models.SET_NULL |
+| Description | description | TextField | |
+| Price | price | DecimalField | max_digits=6, decimal_places=2 |
+| Rating | rating | Decmial Field | max_digits=6, decimal_places=0, null=True, blank=True |
+| Image_URL | imge_url | URLField | max_length=1024, null=True, blank=True |
+| Image | image | ImageField | null=True, blank=True |
 
 
 
