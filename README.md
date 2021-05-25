@@ -1,20 +1,20 @@
-# **CODE INSTITUTE: MILESTONE PROJECT 4** #
+# **CODE INSTITUTE: MILESTONE PROJECT 4**
 
-# **DELI SW** #
+# **DELI SW**
 
 ![site display on different screens](readme/images/testing/responsive.png)
 
-This is the fourth, and final, Milestone Project for the Full Stack Web Development course provided by Code Institute. The main goal for this project was to produce a "full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or activitied based on the dataset, such as the purchase of a product/service." The site is to be built using HTML, CSS, JavaScript, Python+Django, MySQL or Postgres, Stripe  and any other relevant libraries and external API's.
+This is the fourth, and final, Milestone Project for the Full Stack Web Development course provided by Code Institute. The main goal for this project was to produce a "full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or activitied based on the dataset, such as the purchase of a product/service." The site is to be built using HTML, CSS, JavaScript, Python+Django, MySQL or Postgres, Stripe and any other relevant libraries and external API's.
 
 A live version of the site can be found [here](https://milestone-4-delisw.herokuapp.com/).
 
 **For testing purposes, please use the following credit card details:**
 
-`Card number:`    4242 4242 4242 4242
-`Exp:`            any date in the future using MM/YY format
-`CSV:`            any 3 numbers, ie 424
+`Card number:` 4242 4242 4242 4242
+`Exp:` any date in the future using MM/YY format
+`CSV:` any 3 numbers, ie 424
 
-## **CONTENTS** ##
+## **CONTENTS**
 
 - [UX](#ux)
   - [Project Goals](#project-goals)
@@ -39,15 +39,15 @@ A live version of the site can be found [here](https://milestone-4-delisw.heroku
   - [Coding Ideas](#coding-ideas)
 - [Acknowledgements](#acknowledgements)
 
-## **UX** ##
+## **UX**
 
-### <ins>PROJECT GOALS</ins> ###
+### <ins>PROJECT GOALS</ins>
 
 The main aim of this website is to provide the **user** with an online delicatessan showcasing the food and drink on offer from the South West of England. 6 Counties have been included: Cornwall, Devon, Dorset, Gloucestershire, Somerset and Wiltshire, and the site is flexible enough to add further Categories, Counties and, of course, Products when needed. The **site owner** has the ability to add event postings to the site which will allow further promotion of the products available to the **user** from this part of the country.
 
 [Back to Contents](#contents)
 
-### <ins>USER STORIES</ins> ###
+### <ins>USER STORIES</ins>
 
 - As a **user**, I want to be able to register as a new user on the site.
 - As a **user**, I want to be able to log on and off the site after I have registered.
@@ -73,32 +73,27 @@ The main aim of this website is to provide the **user** with an online delicates
 - As a **site owner**, I want to be able to Edit an event on the site.
 - As a **site owner**, I want to be able to Delete an event from the site.
 
+[Back to Contents](#contents)
+
+### <ins>DESIGN PROCESS</ins>
+
+1.
 
 [Back to Contents](#contents)
 
-### <ins>DESIGN PROCESS</ins> ###
+### <ins>FONTS</ins>
 
-1. 
+### <ins>COLOURS</ins>
 
-[Back to Contents](#contents)
-
-### <ins>FONTS</ins> ###
-
-
-### <ins>COLOURS</ins> ###
-
-
-### <ins>WIREFRAMES</ins> ###
-
-
+### <ins>WIREFRAMES</ins>
 
 [Back to Contents](#contents)
 
----  
+---
 
-## **TECHNOLOGY USED** ##
+## **TECHNOLOGY USED**
 
-### <ins>LANGUAGES AND FRAMEWORKS</ins> ###
+### <ins>LANGUAGES AND FRAMEWORKS</ins>
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
@@ -109,14 +104,12 @@ The main aim of this website is to provide the **user** with an online delicates
 - [Google fonts](https://fonts.google.com/) - as previously stated, the fonts used were taken from here.
 - [Heroku](https://www.heroku.com/home) - used for hosting website.
 
-### <ins>API'S</ins> ###
+### <ins>API'S</ins>
 
-
-  
-### <ins>TOOLS</ins> ###
+### <ins>TOOLS</ins>
 
 - [Git](https://git-scm.com/) - version control and recording of all changes to site during development process.
-- [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing. 
+- [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 - [Figma](https://figma.com/) - wireframing
 - [Google Fonts](https://fonts.google.com/) - used to select font families.
 - [W3C Validator](https://validator.w3.org/) - used to test my HTML to ensure there were no errors.
@@ -132,157 +125,158 @@ The main aim of this website is to provide the **user** with an online delicates
 
 ---
 
-## **FEATURES** ##
+## **FEATURES**
 
-### <ins>FEATURES IMPLEMENTED</ins> ###
+### <ins>FEATURES IMPLEMENTED</ins>
 
-### ELEMENTS SEEN ON ALL PAGES ###
+### ELEMENTS SEEN ON ALL PAGES
 
+### ELEMENTS SEEN ON LANDING PAGE
 
+### ELEMENTS SEEN ON LOG IN PAGE
 
-### ELEMENTS SEEN ON LANDING PAGE ###
+### ELEMENTS SEEN ON REGISTER PAGE
 
+### ELEMENTS SEEN ON PROFILE PAGE
 
+### ELEMENTS SEEN ON CATEGORIES PAGE
 
-### ELEMENTS SEEN ON LOG IN PAGE ###
+### ELEMENTS SEEN ON "ALL" RECIPES PAGE
 
+### ELEMENTS SEEN ON COOKBOOK PAGE
 
-### ELEMENTS SEEN ON REGISTER PAGE ###
+### ELEMENTS SEEN ON INDIVIDUAL CATEGORY PAGES
 
+### ELEMENTS SEEN ON SHOW RECIPE PAGE
 
+### ELEMENTS SEEN ON ADD RECIPE PAGE
 
-### ELEMENTS SEEN ON PROFILE PAGE ###
+### ELEMENTS SEEN ON ADD COOKBOOK PAGE - LARDERADMIN ONLY
 
-
-### ELEMENTS SEEN ON CATEGORIES PAGE ###
-
-
-
-### ELEMENTS SEEN ON "ALL" RECIPES PAGE ###
-
-
-
-### ELEMENTS SEEN ON COOKBOOK PAGE ###
-
-
-
-### ELEMENTS SEEN ON INDIVIDUAL CATEGORY PAGES ###
-
-
-
-### ELEMENTS SEEN ON SHOW RECIPE PAGE ###
-
-
-
-### ELEMENTS SEEN ON ADD RECIPE PAGE ###
-
-
-
-### ELEMENTS SEEN ON ADD COOKBOOK PAGE - LARDERADMIN ONLY ###
-
-
-
-### <ins>FUTURE FEATURES</ins> ###
-
-
+### <ins>FUTURE FEATURES</ins>
 
 [Back to Contents](#contents)
 
 ---
 
-## **DATABASE DESIGN** ##
+## **DATABASE DESIGN**
 
-4 collections were used for the construction of the database in MongoDB.
-The collection used the most was **recipes** as it holds the majority of the information required to display information on the DOM.
-There are associations with the following:
+Throughout the development stage of the project, SQLite3 was used as this is the default database included with Django. On deployment, you are given the option to utilise PostgreSQL as this is included with Heroku.
 
-- **categories** to **recipes**
-  - category_name
+Django Allauth, specifically `django.contrib.auth.models` provided the **User** model that is used in the Profile App.
 
-- **cookbooks** to **recipes**
-  - cookbook_name
+**Code Insitiute - Boutique Ado** was used as a template for the majority of the project with the **Events** and **Review** models being added in to supplement the project.
 
-- **users** to **recipes**
-  - username
+### **Products** App
 
-### **Products** App ###
+### Category Model
 
-### Category Model ###
+| Name          | Database Key  | Field Type | Type Validation |
+| ------------- | ------------- | ---------- | --------------- |
+| Name          | name          | CharField  | max_length=254  |
+| Friendly Name | friendly_name | CharField  | max_length=254  |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| Name | name  | CharField | max_length=254 |
-| Friendly Name | friendly_name | CharField | max_length=254 |
+### County Model
 
-### County Model ###
+| Name          | Database Key  | Field Type | Type Validation |
+| ------------- | ------------- | ---------- | --------------- |
+| Name          | name          | CharField  | max_length=254  |
+| Friendly Name | friendly_name | CharField  | max_length=254  |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| Name | name  | CharField | max_length=254 |
-| Friendly Name | friendly_name | CharField | max_length=254 |
+### Product Model
 
-### Product Model ###
+| Name        | Database Key | Field Type    | Type Validation                                              |
+| ----------- | ------------ | ------------- | ------------------------------------------------------------ |
+| Category    | category     | ForeignKey    | "Category", null=True, blank=True, on_delete=models.SET_NULL |
+| SKU         | sku          | CharField     | max_length=254, null=True, blank=True                        |
+| Name        | name         | CharField     | max_length=254                                               |
+| County      | county       | CharField     | "County", null=True, blank=True, on_delete=models.SET_NULL   |
+| Description | description  | TextField     |                                                              |
+| Price       | price        | DecimalField  | max_digits=6, decimal_places=2                               |
+| Rating      | rating       | Decmial Field | max_digits=6, decimal_places=0, null=True, blank=True        |
+| Image_URL   | imge_url     | URLField      | max_length=1024, null=True, blank=True                       |
+| Image       | image        | ImageField    | null=True, blank=True                                        |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| Category | category  | ForeignKey | "Category", null=True, blank=True, on_delete=models.SET_NULL |
-| SKU | sku | CharField | max_length=254, null=True, blank=True |
-| Name | name | CharField | max_length=254 |
-| County | county | CharField | "County", null=True, blank=True, on_delete=models.SET_NULL |
-| Description | description | TextField | |
-| Price | price | DecimalField | max_digits=6, decimal_places=2 |
-| Rating | rating | Decmial Field | max_digits=6, decimal_places=0, null=True, blank=True |
-| Image_URL | imge_url | URLField | max_length=1024, null=True, blank=True |
-| Image | image | ImageField | null=True, blank=True |
+### **Profiles** App
 
-### **Profile** App ###
+### UserProfile Model
 
-### UserProfile Model ###
+| Name                    | Database Key            | Field Type    | Type Validation                              |
+| ----------------------- | ----------------------- | ------------- | -------------------------------------------- |
+| User                    | user                    | OneToOneField | User, on_delete=models.CASCADE               |
+| Default Phone Number    | default_phone_number    | CharField     | max_length=20, null=True, blank=True         |
+| Default Street Address1 | default_street_address1 | CharField     | max_length=80, null=True, blank=True         |
+| Default Street Address2 | default_street_address2 | CharField     | max_length=80, null=True, blank=True         |
+| Default Town or City    | default_town_or_city    | CharField     | max_length=40, null=True, blank=True         |
+| Default County          | default_county          | CharField     | max_length=80, null=True, blank=True         |
+| Default Country         | default_country         | CountryField  | blank_label="Country", null=True, blank=True |
+| Default Postcode        | default_postcode        | CharField     | max_length=20, null=True, blank=True         |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| User | user | OneToOneField | User, on_delete=models.CASCADE |
-| Default Phone Number | default_phone_number | CharField | max_length=20, null=True, blank=True |
-| Default Street Address1 | default_street_address1 | CharField | max_length=80, null=True, blank=True |
-| Default Street Address2 | default_street_address2 | CharField | max_length=80, null=True, blank=True |
-| Default Town or City | default_town_or_city | CharField | max_length=40, null=True, blank=True |
-| Default County | default_county | CharField | max_length=80, null=True, blank=True |
-| Default Country | default_country | CountryField | blank_label="Country", null=True, blank=True |
-| Default Postcode | default_postcode | CharField | max_length=20, null=True, blank=True |
+### **Review** App
 
-### **Review** App ###
+### Review Model
 
-### Review Model ###
+| Name        | Database Key | Field Type    | Type Validation                       |
+| ----------- | ------------ | ------------- | ------------------------------------- |
+| User        | user         | ForeignKey    | UserProfile, on_delete=models.CASCADE |
+| Product     | product      | ForeignKey    | Product, on_delete=models.CASCADE     |
+| Title       | title        | CharField     | max_length=50                         |
+| Description | description  | TextField     |                                       |
+| Rating      | rating       | IntegerField  | choices=RATING                        |
+| Date Posted | date_posted  | DateTimeField | auto_now_add=True                     |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| User | user | ForeignKey | UserProfile, on_delete=models.CASCADE |
-| Product | product | ForeignKey | Product, on_delete=models.CASCADE |
-| Title | title | CharField | max_length=50 |
-| Description | description | TextField |  |
-| Rating | rating | IntegerField | choices=RATING |
-| Date Posted | date_posted | DateTimeField | auto_now_add=True |
+### **Events** App
 
-### **Events** App ###
+### Post Model
 
-### Post Model ###
+| Name       | Database Key | Field Type    | Type Validation                                            |
+| ---------- | ------------ | ------------- | ---------------------------------------------------------- |
+| Title      | title        | CharField     | max_length=200, unique=True                                |
+| Slug       | slug         | SlugField     | max_length=200, unique=True, default=uuid.uuid1            |
+| Author     | author       | ForeignKey    | User, on_delete=models.CASCADE, related_name="event_posts" |
+| Updated On | updated_on   | TextField     | auto_now=True                                              |
+| Content    | content      | TextField     |                                                            |
+| Image      | image        | ImageField    | null=True, blank=True                                      |
+| Created On | created_on   | DateTimeField | auto_now_hide=True                                         |
+| Status     | status       | IntegerField  | choices=status, default=0                                  |
 
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| Title | title | CharField | max_length=200, unique=True |
-| Slug | slug | SlugField | max_length=200, unique=True, default=uuid.uuid1 |
-| Author | author | ForeignKey | User, on_delete=models.CASCADE, related_name="event_posts" |
-| Updated On | updated_on | TextField | auto_now=True |
-| Content | content | TextField |  |
-| Image | image | ImageField | null=True, blank=True |
-| Created On | created_on | DateTimeField | auto_now_hide=True |
-| Status | status | IntegerField | choices=status, default=0 |
+### **Checkout** App
 
+### Order Model
+
+| Name            | Database Key    | Field Type                      | Type Validation                                                                      |
+| --------------- | --------------- | ------------------------------- | ------------------------------------------------------------------------------------ |
+| Order Number    | order_number    | CharField                       | max_length=32, null=False, editable=False                                            |
+| User Profile    | user_profile    | ForeignKey                      | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+| Full Name       | full_name       | CharField                       | max_length=50, null=False, blank=False                                               |
+| Email           | email           | EmailField                      | max_length=254, null=False, blank=False                                              |
+| Phone Number    | phone_number    | CharField                       | max_length=20, null=False, blank=False                                               |
+| Country         | country         | CountryField                    | blank_label='Country\*', null=False, blank=False                                     |
+| Postcode        | postcode        | CharField                       | max_length=20, null=True, blank=True                                                 |
+| Town or City    | town_or_city    | CharField                       | max_length=40, null=False, blank=False                                               |
+| Street Address1 | street_address1 | CharField                       | max_length=80, null=False, blank=False                                               |
+| Street Address2 | street_address2 | CharField                       | max_length=80, null=False, blank=False                                               |
+| County          | county          | CharField                       | max_length=80, null=True, blank=True                                                 |
+| Date            | date            | DateTimeField auto_now_add=True |                                                                                      |
+| Delivery Cost   | delivery_cost   | DecimalField                    | max_digits=6, decimal_places=2, null=False, default=0                                |
+| Order Total     | order_total     | DecimalField                    | max_digits=6, decimal_places=2, null=False, default=0                                |
+| Grand Total     | grand_total     | DecimalField                    | max_digits=6, decimal_places=2, null=False, default=0                                |
+
+### OrderLine Model
+
+| Name           | Database Key   | Field Type   | Type Validation                                                                    |
+| -------------- | -------------- | ------------ | ---------------------------------------------------------------------------------- |
+| Order          | order          | ForeignKey   | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' |
+| Product        | product        | ForeignKey   | Product, null=False, blank=False, on_delete=models.CASCADE                         |
+| Product Size   | product_size   | CharField    | max_length=2, null=True, blank=True                                                |
+| Quantity       | quantity       | IntegerField | null=False, blank=False, default=0                                                 |
+| Lineitem Total | lineitem_total | DecimalField | max_digits=6, decmial_places=2, null=False, blank=False, editable=False            |
 
 [Back to Contents](#contents)
 
 ---
-## **TESTING** ##
+
+## **TESTING**
 
 Testing information can be found [here](readme/testing.md).
 
@@ -290,46 +284,37 @@ Testing information can be found [here](readme/testing.md).
 
 ---
 
-## **DEPLOYMENT** ##
+## **DEPLOYMENT**
 
 ### <ins>HOSTING</ins>
 
-
-
 ### <ins>LOCAL HOSTING</ins>
-
-
 
 [Back to Contents](#contents)
 
 ---
 
-## **CREDITS** ##
+## **CREDITS**
 
-### <ins>IMAGES AND TEXT CONTENT</ins> ###
+### <ins>IMAGES AND TEXT CONTENT</ins>
 
-
-
-### <ins>IMAGE EDITING</ins> ###
+### <ins>IMAGE EDITING</ins>
 
 - [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) - basic image cropping and editing
 
 ### <ins>CODING IDEAS</ins>
 
-
-
 [Back to Contents](#contents)
 
 ---
 
-## **ACKNOWLEDGEMENTS** ##
-
+## **ACKNOWLEDGEMENTS**
 
 Thank you to the following people:
 
 - My mentor Seun Owonikoko for her time, guidance and making things obvious...and this time for being a debugging Champion!!
 - The guys in the class of May 20 on Slack - always there for a chat when needed!
-    - special mentions to @Adam, @Sara, @Kamil Zok and @Pauld0051
+  - special mentions to @Adam, @Sara, @Kamil Zok and @Pauld0051
 - My partner, Paul, for putting up with the growing obsession I have towards coding.
 
 [Back to Contents](#contents)
