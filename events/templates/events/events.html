@@ -41,7 +41,7 @@
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a class="badge badge-warning" href="{% url 'edit_post' post.slug %}">Edit</a> |
-                    <a class="badge badge-danger" href="">Delete</a>
+                    <a class="badge badge-danger" href="{% url 'delete_post' post.slug %}">Delete</a>
                 </small>
                 {% endif %}
             </div>

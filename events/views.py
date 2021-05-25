@@ -71,3 +71,12 @@ def edit_post(request, slug):
     }
 
     return render(request, template, context)
+
+
+def delete_post(request, slug):
+    """Delete an event"""
+
+    post = get_object_or_404(Post, slug=slug)
+    post.delete()
+    messages.success(request, "Event deleted!")
+    return redirect(reverse("events"))
