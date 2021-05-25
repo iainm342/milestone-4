@@ -1,59 +1,253 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **CODE INSTITUTE: MILESTONE PROJECT 4** #
 
-Welcome USER_NAME,
+# **DELI SW** #
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![site display on different screens](readme/images/testing/responsive.png)
 
-## Gitpod Reminders
+This is the fourth, and final, Milestone Project for the Full Stack Web Development course provided by Code Institute. The main goal for this project was to produce a "full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or activitied based on the dataset, such as the purchase of a product/service." The site is to be built using HTML, CSS, JavaScript, Python+Django, MySQL or Postgres, Stripe  and any other relevant libraries and external API's.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+A live version of the site can be found [here](https://milestone-4-delisw.herokuapp.com/).
 
-`python3 -m http.server`
+**For testing purposes, please use the following credit card details:**
 
-A blue button should appear to click: _Make Public_,
+Card number:    4242 4242 4242 4242 
+Exp:            any date in the future using MM/YY format
+CSV:            any 3 numbers, ie 424
 
-Another blue button should appear to click: _Open Browser_.
+## **CONTENTS** ##
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [UX](#ux)
+  - [Project Goals](#project-goals)
+  - [User Stories](#user-stories)
+  - [Design Process](#design-process)
+    - [Fonts](#fonts)
+    - [Colours](#colours)
+    - [Wireframes](#wireframes)
+- [Technology Used](#technology-used)
+  - [Languages and Frameworks](#languages-and-frameworks)
+  - [API's](#API'S)
+  - [Tools](#tools)
+- [Features](#features)
+- [Database Design](#database-design)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Hosting](#hosting)
+  - [Local Hosting](#local-hosting)
+- [Credits](#credits)
+  - [Images](#images)
+  - [Image editing](#image-editing)
+  - [Coding Ideas](#coding-ideas)
+- [Acknowledgements](#acknowledgements)
 
-A blue button should appear to click: _Make Public_,
+## **UX** ##
 
-Another blue button should appear to click: _Open Browser_.
+### <ins>PROJECT GOALS</ins> ###
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The main aim of this website is to provide the **user** with an online delicatessan showcasing the food and drink on offer from the South West of England. 6 Counties have been included: Cornwall, Devon, Dorset, Gloucestershire, Somerset and Wiltshire, and the site is flexible enough to add further Categories, Counties and, of course, Products when needed. The **site owner** has the ability to add event postings to the site which will allow further promotion of the products available to the **user** from this part of the country.
 
-To log into the Heroku toolbelt CLI:
+[Back to Contents](#contents)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### <ins>USER STORIES</ins> ###
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+- As a **user**, I want to be able to register as a new user on the site.
+- As a **user**, I want to be able to log on and off the site after I have registered.
+- As a **user**, I want to be able to recover my password if I no longer remember it.
+- As a **user**, I want to receive confirmation emails throughout the registration process.
+- As a **user**, I want to have a personal profile.
+- As a **user**, I want to be able to view all the products available for purchase.
+- As a **user**, I want to be able to view products by Category.
+- As a **user**, I want to be able to see more detailed product information about products I am interested in.
+- As a **user**, I want to be able to view the content, and associated cost, of my "bag" throughout my site use.
+- As a **user**, I want to be able to sort the products using pre-defined filters.
+- As a **user**, I want to be able to sort a specific Category of product.
+- As a **user**, I want to be able to add products to my basket easily.
+- As a **user**, I want to be able to view the items in my basket.
+- As a **user**, I want to be able to adjust the quantity of items in my basket.
+- As a **user**, I want to be able to easily enter my payment details.
+- As a **user**, I want to be able to view an order confirmation after checkout.
+- As a **user**, I want to be able to see what events are happening within the region.
+- As a **site owner**, I want to be able to Add a product to the site.
+- As a **site owner**, I want to be able to Edit a product to the site.
+- As a **site owner**, I want to be able to Delete a product from the site.
+- As a **site owner**, I want to be able to Add an event to the site.
+- As a **site owner**, I want to be able to Edit an event on the site.
+- As a **site owner**, I want to be able to Delete an event from the site.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+[Back to Contents](#contents)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### <ins>DESIGN PROCESS</ins> ###
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+1. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+[Back to Contents](#contents)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### <ins>FONTS</ins> ###
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### <ins>COLOURS</ins> ###
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### <ins>WIREFRAMES</ins> ###
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+
+
+[Back to Contents](#contents)
+
+---  
+
+## **TECHNOLOGY USED** ##
+
+### <ins>LANGUAGES AND FRAMEWORKS</ins> ###
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - this was used for the addition/deletion of ingredients and methods buttons
+- [jQuery](https://jquery.com/) - this was used to activate the Materialize functionality.
+- [Python](https://www.python.org/) - used to write the logic that operates the site.
+- [Font-Awesome](https://fontawesome.com/icons?d=gallery) - icons were taken from this site for the forms, header, footer and social buttons.
+- [Google fonts](https://fonts.google.com/) - as previously stated, the fonts used were taken from here.
+- [Heroku](https://www.heroku.com/home) - used for hosting website.
+
+### <ins>API'S</ins> ###
+
+
+  
+### <ins>TOOLS</ins> ###
+
+- [Git](https://git-scm.com/) - version control and recording of all changes to site during development process.
+- [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing. 
+- [Figma](https://figma.com/) - wireframing
+- [Google Fonts](https://fonts.google.com/) - used to select font families.
+- [W3C Validator](https://validator.w3.org/) - used to test my HTML to ensure there were no errors.
+- [W3C Validator CSS](https://jigsaw.w3.org/css-validator/) - used to test my CSS to ensure there were no errors.
+- [JSHint](https://https://jshint.com/) - used to test my JS to ensure there were no errors.
+- [PEP8 Online](http://pep8online.com/) - used to check my Python was PEP8 compliant.
+- [Chrome Developer](https://developers.google.com/web/tools/chrome-devtools) - used to test responsiveness of site throughout the developmnent process and also performance using Lighthouse.
+- [Free Formatter](https://freeformatter.com/html-formatter.html#ad-output) - html formatter to help keep things tidy!
+- [Am I Responsive](http://ami.responsivedesign.is/#) - used to create responsive image for readme.MD.
+- [Favicon](https://favicon.io/) - used to generate the Favicon on the webpage tab.
+
+[Back to Contents](#contents)
 
 ---
 
-Happy coding!
+## **FEATURES** ##
+
+### <ins>FEATURES IMPLEMENTED</ins> ###
+
+### ELEMENTS SEEN ON ALL PAGES ###
+
+
+
+### ELEMENTS SEEN ON LANDING PAGE ###
+
+
+
+### ELEMENTS SEEN ON LOG IN PAGE ###
+
+
+### ELEMENTS SEEN ON REGISTER PAGE ###
+
+
+
+### ELEMENTS SEEN ON PROFILE PAGE ###
+
+
+### ELEMENTS SEEN ON CATEGORIES PAGE ###
+
+
+
+### ELEMENTS SEEN ON "ALL" RECIPES PAGE ###
+
+
+
+### ELEMENTS SEEN ON COOKBOOK PAGE ###
+
+
+
+### ELEMENTS SEEN ON INDIVIDUAL CATEGORY PAGES ###
+
+
+
+### ELEMENTS SEEN ON SHOW RECIPE PAGE ###
+
+
+
+### ELEMENTS SEEN ON ADD RECIPE PAGE ###
+
+
+
+### ELEMENTS SEEN ON ADD COOKBOOK PAGE - LARDERADMIN ONLY ###
+
+
+
+### <ins>FUTURE FEATURES</ins> ###
+
+
+
+[Back to Contents](#contents)
+
+---
+
+## **DATABASE DESIGN** ##
+
+
+
+
+[Back to Contents](#contents)
+
+---
+## **TESTING** ##
+
+Testing information can be found [here](readme/testing.md).
+
+[Back to Contents](#contents)
+
+---
+
+## **DEPLOYMENT** ##
+
+### <ins>HOSTING</ins>
+
+
+
+### <ins>LOCAL HOSTING</ins>
+
+
+
+[Back to Contents](#contents)
+
+---
+
+## **CREDITS** ##
+
+### <ins>IMAGES AND TEXT CONTENT</ins> ###
+
+
+
+### <ins>IMAGE EDITING</ins> ###
+
+- [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) - basic image cropping and editing
+
+### <ins>CODING IDEAS</ins>
+
+
+
+[Back to Contents](#contents)
+
+---
+
+## **ACKNOWLEDGEMENTS** ##
+
+
+Thank you to the following people:
+
+- My mentor Seun Owonikoko for her time, guidance and making things obvious...and this time for being a debugging Champion!!
+- The guys in the class of May 20 on Slack - always there for a chat when needed!
+    - special mentions to @Adam, @Sara, @Kamil Zok and @Pauld0051
+- My partner, Paul, for putting up with the growing obsession I have towards coding.
+
+[Back to Contents](#contents)
+
+---
