@@ -47,3 +47,27 @@ def add_post(request):
     }
 
     return render(request, template, context)
+
+
+def edit_post(request, slug):
+
+    post = get_object_or_404(Post, slug=slug)
+    if request.method == "POST":
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Successfully updated event")
+            return redirect(reverse("post_detail", args=[post.slug]))
+        else:
+            messages.error(request, "Failed to update the event.")
+    else:
+        form = PostForm(instance=post)
+        messages.info(request, f"You are editing {post.title}")
+
+    template = "events/edit_event.html"
+    context = {
+        "form": form,
+        "post": post,
+    }
+
+    return render(request, template, context)
