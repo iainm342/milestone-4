@@ -20,7 +20,7 @@
     {% if request.user.is_superuser %}
     <div class="row">
         <div class="col text-center mt-3">
-            <a href="" class="btn btn-blue logo-font">Add Event</a>
+            <a href="{% url 'add_post' %}" class="btn btn-blue logo-font">Add Event</a>
             <hr class="w-50 mb-1">
         </div>
     </div>
