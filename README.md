@@ -315,6 +315,42 @@ Testing information can be found [here](readme/testing.md).
 
 ### <ins>LOCAL HOSTING</ins>
 
+If you wish to clone a copy of my project, feel free. You will need to:
+
+- Navigate to my GitHub [repository](https://github.com/iainm342/milestone-4).
+- Click the `Code` button next to the Green Gitpod button.
+- Either, download the zip file or clone the repo using `gh repo clone iainm342/milestone-4` in the terminal.
+- Install the modules listed in the requirements.txt file using `python -m pip -r requirements.txt` in the terminal.
+- Install the JSON files using `python manage.py loaddata categories`, `python manage.py loaddata counties` and `python manage.py loaddata products` in this order as "products" relies on the previous two.
+- Create a SuperUser by using `python manage.py createsuperuser` and following the onscreen instructions.
+- Run migrations to create your database by using `python manage.py migrate`
+- Create an env.py file in your application folder and add the following:
+
+  ```
+  import os
+  ```
+
+os.environ.setdefault(
+"SECRET_KEY", "ADD YOUR SECRET KEY HERE"
+)
+os.environ.setdefault(
+"STRIPE_PUBLIC_KEY",
+"ADD YOUR STRIPE PUBLIC KEY HERE,
+)
+os.environ.setdefault(
+"STRIPE_SECRET_KEY",
+"ADD YOUR STRIPE SECRET KEY HERE",
+)
+os.environ.setdefault("STRIPE_WH_SECRET", "ADD YOUR STRIPE WEBHOOK SECRET HERE")
+
+os.environ.setdefault("EMAIL_HOST_PASS", "ADD YOUR EMAIL HOST PASSWORD HERE")
+
+os.environ.setdefault("EMAIL_HOST_USER", "ADD YOUR EMAIL HOST USERNAME HERE")
+
+```
+
+- The app can now be run locally by typing python manage.py in the terminal and will be available in your browser using the address `http://127.0.0.1:8000`.
+
 [Back to Contents](#contents)
 
 ---
@@ -346,9 +382,10 @@ Thank you to the following people:
 
 - My mentor Seun Owonikoko for her time, guidance and making things obvious...and this time for being a debugging Champion!!
 - The guys in the class of May 20 on Slack - always there for a chat when needed!
-  - special mentions to @Adam, @Sara, @Kamil Zok and @Pauld0051
+- special mentions to @Adam, @Sara, @Kamil Zok and @Pauld0051
 - My partner, Paul, for putting up with the growing obsession I have towards coding.
 
 [Back to Contents](#contents)
 
 ---
+```
