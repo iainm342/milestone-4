@@ -328,20 +328,20 @@ If you wish to clone a copy of my project, feel free. You will need to:
 
   ```
   import os
-  ```
 
-os.environ.setdefault(
-"SECRET_KEY", "ADD YOUR SECRET KEY HERE"
-)
-os.environ.setdefault(
-"STRIPE_PUBLIC_KEY",
-"ADD YOUR STRIPE PUBLIC KEY HERE,
-)
-os.environ.setdefault(
-"STRIPE_SECRET_KEY",
-"ADD YOUR STRIPE SECRET KEY HERE",
-)
-os.environ.setdefault("STRIPE_WH_SECRET", "ADD YOUR STRIPE WEBHOOK SECRET HERE")
+  os.environ.setdefault(
+  "SECRET_KEY", "ADD YOUR SECRET KEY HERE"
+  )
+  os.environ.setdefault(
+  "STRIPE_PUBLIC_KEY",
+  "ADD YOUR STRIPE PUBLIC KEY HERE,
+  )
+  os.environ.setdefault(
+  "STRIPE_SECRET_KEY",
+  "ADD YOUR STRIPE SECRET KEY HERE",
+  )
+  os.environ.setdefault("STRIPE_WH_SECRET", "ADD YOUR STRIPE WEBHOOK SECRET HERE")
+  ```
 
 os.environ.setdefault("EMAIL_HOST_PASS", "ADD YOUR EMAIL HOST PASSWORD HERE")
 
