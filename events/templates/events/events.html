@@ -10,26 +10,38 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="overlay"></div>
+<div class="container-fluid">
     <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in posts %}
-            <div class="card border-2 mb-3">
-                {% if post.image %}
-                <img class="card-img-top event-card-img" src="{{ post.image.url }}" alt="">
-                {% else %}
-                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="">
-                {% endif %}
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                </div>
-            </div>
-            {% endfor %}
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Events</h2>
         </div>
     </div>
+    {% if request.user.is_superuser %}
+    <div class="row">
+        <div class="col text-center mt-3">
+            <a href="" class="btn btn-blue logo-font">Add Event</a>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    {% endif %}
+    <div class="col-md-8 mt-3 left">
+        {% for post in posts %}
+        <div class="card border-2 mb-3">
+            {% if post.image %}
+            <img class="card-img-top event-card-img" src="{{ post.image.url }}" alt="">
+            {% else %}
+            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="">
+            {% endif %}
+            <div class="card-body">
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                <p class="card-text">{{post.content|slice:":200" }}</p>
+                <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 </div>
 {%endblock%}
