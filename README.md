@@ -341,13 +341,12 @@ If you wish to clone a copy of my project, feel free. You will need to:
   "ADD YOUR STRIPE SECRET KEY HERE",
   )
   os.environ.setdefault("STRIPE_WH_SECRET", "ADD YOUR STRIPE WEBHOOK SECRET HERE")
+
+  os.environ.setdefault("EMAIL_HOST_PASS", "ADD YOUR EMAIL HOST PASSWORD HERE")
+
+  os.environ.setdefault("EMAIL_HOST_USER", "ADD YOUR EMAIL HOST USERNAME HERE")
+
   ```
-
-os.environ.setdefault("EMAIL_HOST_PASS", "ADD YOUR EMAIL HOST PASSWORD HERE")
-
-os.environ.setdefault("EMAIL_HOST_USER", "ADD YOUR EMAIL HOST USERNAME HERE")
-
-```
 
 - The app can now be run locally by typing python manage.py in the terminal and will be available in your browser using the address `http://127.0.0.1:8000`.
 
@@ -388,4 +387,7 @@ Thank you to the following people:
 [Back to Contents](#contents)
 
 ---
+
+```
+
 ```
