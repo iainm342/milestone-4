@@ -77,13 +77,25 @@ The main aim of this website is to provide the **user** with an online delicates
 
 ### <ins>DESIGN PROCESS</ins>
 
-1.
+1. This site is, again, based on my hospitality background and is as close to an active business
+
+2. The colour scheme chosen was devised using the [Coolors](https://coolors.co/) website. The initial palette had five colours but I decided to reduce this down to three: #2b4162 Indigo Dye, #721817 Persian Plum and #f49f42 Deep Saffron. These choices, along with the white background, make the site stand out on all screen sizes and remains legible for the user at all times.
+
+3. I used [Figma](https://figma.com/) to create my wireframes and used it to organise the flow of the site and how the different pages would respond to the different screen sizes.
+
+4. For this project, I more, or less, stuck to the initial designs as it was largely based on the Boutique Ado site. THis has made the process a lot easier as, previously mentioned, design is not my strong point. One of the key changes was to move the mobile-top navbar to the bottom of the screen. I felt that if you are using a small, hand-held, device having everything at the top of the screen is fairly limiting. We all use our thumbs as well as our fingers and being able to access the Search, My Account and Basket options at the bottom of the screen improved the overall User Experience.
+
+5. I referred to my User Stories and initial wireframes throughout the process and all changes made were to improve the final "look and feel" of the site and to remove the initial design choices that were deemed as inappropriate.
 
 [Back to Contents](#contents)
 
 ### <ins>FONTS</ins>
 
+I chose the Bebas Neue font family for all the headers/headline text as it looked contemporary and the complimentary Montserrat font family for he body text throughout the site. This was suggestd via [Google Fonts](https://fonts.google.com/?query=bebas+neue) and provides a sharp, concise look and feel for the site. The font families were imported in to the main base.css file.
+
 ### <ins>COLOURS</ins>
+
+The colours mentioned above were chosen to create a sharp, modern look to the site along with the font families. Bootstrap class colours were also used throughout for the toasts and the edit and delete pills.
 
 ### <ins>WIREFRAMES</ins>
 
