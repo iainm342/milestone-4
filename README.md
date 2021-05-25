@@ -10,9 +10,9 @@ A live version of the site can be found [here](https://milestone-4-delisw.heroku
 
 **For testing purposes, please use the following credit card details:**
 
-Card number:    4242 4242 4242 4242 
-Exp:            any date in the future using MM/YY format
-CSV:            any 3 numbers, ie 424
+`Card number:`    4242 4242 4242 4242
+`Exp:`            any date in the future using MM/YY format
+`CSV:`            any 3 numbers, ie 424
 
 ## **CONTENTS** ##
 
@@ -205,23 +205,23 @@ There are associations with the following:
 - **users** to **recipes**
   - username
 
-### products app ###
+### **Products** App ###
 
-### category model ###
-
-| Name | Database Key | Field Type | Type Validation |
-| --- | --- | --- | --- |
-| Name | name  | CharField | max_length=254 |
-| Friendly Name | friendly_name | CharField | max_length=254 |
-
-### county model ###
+### Category Model ###
 
 | Name | Database Key | Field Type | Type Validation |
 | --- | --- | --- | --- |
 | Name | name  | CharField | max_length=254 |
 | Friendly Name | friendly_name | CharField | max_length=254 |
 
-### product model ###
+### County Model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| Name | name  | CharField | max_length=254 |
+| Friendly Name | friendly_name | CharField | max_length=254 |
+
+### Product Model ###
 
 | Name | Database Key | Field Type | Type Validation |
 | --- | --- | --- | --- |
@@ -235,6 +235,48 @@ There are associations with the following:
 | Image_URL | imge_url | URLField | max_length=1024, null=True, blank=True |
 | Image | image | ImageField | null=True, blank=True |
 
+### **Profile** App ###
+
+### UserProfile Model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| User | user | OneToOneField | User, on_delete=models.CASCADE |
+| Default Phone Number | default_phone_number | CharField | max_length=20, null=True, blank=True |
+| Default Street Address1 | default_street_address1 | CharField | max_length=80, null=True, blank=True |
+| Default Street Address2 | default_street_address2 | CharField | max_length=80, null=True, blank=True |
+| Default Town or City | default_town_or_city | CharField | max_length=40, null=True, blank=True |
+| Default County | default_county | CharField | max_length=80, null=True, blank=True |
+| Default Country | default_country | CountryField | blank_label="Country", null=True, blank=True |
+| Default Postcode | default_postcode | CharField | max_length=20, null=True, blank=True |
+
+### **Review** App ###
+
+### Review Model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| User | user | ForeignKey | UserProfile, on_delete=models.CASCADE |
+| Product | product | ForeignKey | Product, on_delete=models.CASCADE |
+| Title | title | CharField | max_length=50 |
+| Description | description | TextField |  |
+| Rating | rating | IntegerField | choices=RATING |
+| Date Posted | date_posted | DateTimeField | auto_now_add=True |
+
+### **Events** App ###
+
+### Post Model ###
+
+| Name | Database Key | Field Type | Type Validation |
+| --- | --- | --- | --- |
+| Title | title | CharField | max_length=200, unique=True |
+| Slug | slug | SlugField | max_length=200, unique=True, default=uuid.uuid1 |
+| Author | author | ForeignKey | User, on_delete=models.CASCADE, related_name="event_posts" |
+| Updated On | updated_on | TextField | auto_now=True |
+| Content | content | TextField |  |
+| Image | image | ImageField | null=True, blank=True |
+| Created On | created_on | DateTimeField | auto_now_hide=True |
+| Status | status | IntegerField | choices=status, default=0 |
 
 
 [Back to Contents](#contents)
