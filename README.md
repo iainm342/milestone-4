@@ -99,6 +99,17 @@ The colours mentioned above were chosen to create a sharp, modern look to the si
 
 ### <ins>WIREFRAMES</ins>
 
+Initial wireframes for the following pages can be found by clicking on the links below:
+
+- [Landing Page]()
+- [All Products]()
+- [Register]()
+- [Login]()
+- [Basket]()
+- [Add Product]()
+- [Product Detail]()
+- [Events]()
+
 [Back to Contents](#contents)
 
 ---
@@ -112,11 +123,12 @@ The colours mentioned above were chosen to create a sharp, modern look to the si
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - this was used for the addition/deletion of ingredients and methods buttons
 - [jQuery](https://jquery.com/) - this was used to activate the Materialize functionality.
 - [Python](https://www.python.org/) - used to write the logic that operates the site.
+- [Django](https://www.djangoproject.com/) - web framework used to allow a modular site to be created.
 - [Font-Awesome](https://fontawesome.com/icons?d=gallery) - icons were taken from this site for the forms, header, footer and social buttons.
 - [Google fonts](https://fonts.google.com/) - as previously stated, the fonts used were taken from here.
 - [Heroku](https://www.heroku.com/home) - used for hosting website.
-
-### <ins>API'S</ins>
+- [Bootstrap](https://getbootstrap.com/) - used for responsive grid framework, navigation and buttons.
+- [Stripe](https://stripe.com/gb) - ecommerce payment system.
 
 ### <ins>TOOLS</ins>
 
@@ -132,6 +144,7 @@ The colours mentioned above were chosen to create a sharp, modern look to the si
 - [Free Formatter](https://freeformatter.com/html-formatter.html#ad-output) - html formatter to help keep things tidy!
 - [Am I Responsive](http://ami.responsivedesign.is/#) - used to create responsive image for readme.MD.
 - [Favicon](https://favicon.io/) - used to generate the Favicon on the webpage tab.
+- [AWS](http://aws.amazon.com/) - used the S3 and IAM modules for storage and user access.
 
 [Back to Contents](#contents)
 
@@ -310,11 +323,18 @@ Testing information can be found [here](readme/testing.md).
 
 ### <ins>IMAGES AND TEXT CONTENT</ins>
 
+All images and content were taken from the relevant business websites.
+
 ### <ins>IMAGE EDITING</ins>
 
 - [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) - basic image cropping and editing
+- [Canva](https://www.canva.com/) - resized all images with Canva.
 
 ### <ins>CODING IDEAS</ins>
+
+- [Code Institute](https://codeinstitute.net/) - main structure and model was taken from the Boutique Ado mini project.
+- [Django Central](https://djangocentral.com/building-a-blog-application-with-django/) - used to initially create the Events app. This was then modified to be more in line with the rest of the project.
+- [Digital Ocean](https://www.digitalocean.com/community/tutorials/django-authentication-with-facebook-instagram-and-linkedin) - used to add the Social log in functionality.
 
 [Back to Contents](#contents)
 
