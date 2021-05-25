@@ -19,7 +19,7 @@ def post_detail(request, slug):
 
     post = get_object_or_404(Post, slug=slug)
 
-    template = "events/post_detail.html"
+    template = "events/event_detail.html"
     context = {
         "post": post,
     }
