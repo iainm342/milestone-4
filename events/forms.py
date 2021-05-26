@@ -22,12 +22,5 @@ class PostForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
 
-        # Add placeholders and classes to input fields
+        # Focuses user to title field in form on page load
         self.fields["title"].widget.attrs["autofocus"] = True
-        # for field in self.fields:
-        #     if field != "rating":
-        #         placeholder = placeholders[field]
-        #         self.fields[field].widget.attrs["placeholder"] = placeholder
-        #         self.fields[field].label = False
-
-        #     self.fields[field].widget.attrs["class"] = "mb-3 rounded-0 profile-form"

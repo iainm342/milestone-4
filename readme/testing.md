@@ -63,7 +63,7 @@ JShint Errors:
 
 PEP8 Errors:
 
-All .py files passed through the Validator with the following errors which have been resolved:
+All .py files passed through the Validator with the following errors which have been resolved where possible
 
 | Python File                    | Warnings / Errors                             | Pass |
 | ------------------------------ | --------------------------------------------- | ---- |
@@ -79,7 +79,40 @@ All .py files passed through the Validator with the following errors which have 
 | Checkout > urls.py             |                                               | Pass |
 | Checkout > views.py            | Lines 1, 72, 84, 92, 102 too long             | Fail |
 |                                | Line 74 too long and unsure how to resolve it |      |
-| Checkout > webhook_handlers.py | Lines 73, 74, 104 and 104 too long            |
+| Checkout > webhook_handlers.py | Lines 73, 74, 104 and 104 too long            |      |
+| Checkout > webhooks.py         | Line 43 too long                              |
+| -----------------              | ---------------------------                   | ---- |
+| Contact > forms.py             |                                               | Pass |
+| Contact > urls.py              |                                               | Pass |
+| Contact > views.py             |                                               | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| Events > admin.py              |                                               | Pass |
+| Events > forms.py              |                                               | Pass |
+| Events > models.py             |                                               | Pass |
+| Events > urls.py               |                                               | Pass |
+| Events > views.py              |                                               | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| Home > urls. py                |                                               | Pass |
+| Home > views.py                |                                               | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| Products > admin.py            |                                               | Pass |
+| Products > forms.py            |                                               | Pass |
+| Products > models.py           |                                               | Pass |
+| Products > urls.py             |                                               | Pass |
+| Products > views.py            | Lines 57, 103, 132 too long                   | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| Profiles > forms.py            |                                               | Pass |
+| Profiles > models.py           | Lines 16, 17, 18, 19 and 21 too long          | Pass |
+| Profiles > urls.py             |                                               | Pass |
+| Profiles > views.py            | Line 22 too long                              | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| Reviews > admin.py             |                                               | Pass |
+| Reviews > forms.py             |                                               | Pass |
+| Reviews > models.py            |                                               | Pass |
+| Reviews > urls.py              |                                               | Pass |
+| Reviews > views.py             |                                               | Pass |
+
+[Back to Contents](#contents)
 
 ### <ins>ACCESIBILITY VALIDATION</ins>
 
