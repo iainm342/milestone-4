@@ -162,27 +162,81 @@ Initial wireframes for the following pages can be found by clicking on the links
 
 ### ELEMENTS SEEN ON ALL PAGES
 
-### ELEMENTS SEEN ON LANDING PAGE
+- Grid system used to structure pages and make them responsive for various viewports.
+- Bootstrap NavBar navbar to allow easy navigation throughout the web app. Able to reach all pages of the app from the NavBar. Mobile Nav is split between the header and footer for easier navigation.
+- Bootstrap NavBar contains site title, which acts as a home button, dropdowns for accessing account actions, link to shopping basket and filters to help navigate the site.
+- Bootstrap Footer used with social links and email "contact us" link. rel="noreferrer noopener" has been added for security.
+- Favicon for the title tab in the browser.
+- Hover used on all buttons and web/email addresses.
+- Bootstrap Toasts used for all flashed messages after completion of an action.
+- Search bar at the top of the screen that is linked to keyword searches.
+
+### ELEMENTS SEEN ON HOME PAGE
+
+- Background image taking up the full viewport.
+- Container with CTA and hoverable link to the products page.
 
 ### ELEMENTS SEEN ON LOG IN PAGE
 
+- Container with form allowing input from the **user**.
+- Form asks for username and password with "Sign In" submit button which queries the DB to see if the **user** exists.
+- Successful input takes **user** to the home page and displays a Success toast.
+- Unsuccessful input displays error message.
+- Links are displayed to allow the **user** to register or to reset their password.
+
 ### ELEMENTS SEEN ON REGISTER PAGE
 
-### ELEMENTS SEEN ON PROFILE PAGE
+- Container with form allowing input from the **user**.
+- Form asks the **user** to supply the following: email address, confirm email address, username, password, confirm password.
+- "Sign Up" submit button sends info to DB and shows a verification page prompting the user to confirm that they want to sign up.
 
-### ELEMENTS SEEN ON CATEGORIES PAGE
+### ELEMENTS SEEN ON ALL PRODUCTS PAGE
 
-### ELEMENTS SEEN ON "ALL" RECIPES PAGE
+- Bootstrap cards with Basic product information: Image, Name, County, Price, Category, Rating.
+- Clicking the image takes the **user** to the specific product detail page.
+- Clicking the County name will filter, and display, all the products for that County.
+- Clicking the Category name will filter, and display, all the products for that Category.
+- Sort dropdown in the top left of the screen allows the **user** to manipulate the display by Name, Category, Price and Rating - this also reversed.
+- Back to Top button at the bottom right of the screen.
+- If the **user** is a SuperUser, Edit/Delete pills will be displayed to allow easy Product Management.
 
-### ELEMENTS SEEN ON COOKBOOK PAGE
+### ELEMENTS SEEN ON PRODUCT DETAIL PAGE
 
-### ELEMENTS SEEN ON INDIVIDUAL CATEGORY PAGES
+- The **user** will see a larger product image along with a the Name, County, Price, Category, Rating and a Full Description of the product.
+- Plus/Minus quantity icons are placed either side of Number Input Field which can also be manually updated or using the up/down arrows that appear in the field.
+- Two buttons - add to bag and keep shopping - are below the quantity input field.
+- Keep Shopping returns the **user** to the All Products page and Add to Bag adds items to the bag which displays a Bootsrap Toast which will include a running bag total and display of the contents.
+- The Add a Review button allows the **user** to add a review for any product and will take them to the Add Review page.
+- If the **user** added the review, or is a **SuperUser**, they will also see Edit/Delete pills to allow them to manage the content.
 
-### ELEMENTS SEEN ON SHOW RECIPE PAGE
+### ELEMENTS SEEN ON EVENTS PAGE
 
-### ELEMENTS SEEN ON ADD RECIPE PAGE
+- The **user** will see Bootstrap card contining an image, Event Name, Event author and a brief outline of the event.
+- A button within the card body will take the **user** to the full event description.
+- The full event description has a back button to allow the **user** to return to the Events page.
 
-### ELEMENTS SEEN ON ADD COOKBOOK PAGE - LARDERADMIN ONLY
+### ELEMENTS SEEN ON BASKET PAGE
+
+- The **user** will see a summary of their basket.
+- The **user** will be able to adjust the quantity of the items in the basket using the plus/minus icons and clicking the update button or remove the whole line by clicking the remove button.
+- The structure of the page comes from a Bootstrap table.
+- The buttons at the bottom allow the **user** to confirm that they wish to proceed with paying and takes them to the checkout page or to return to the all products page.
+
+### ELEMENTS SEEN ON CHECKOUT PAGE
+
+- The page is split in to two columns - user/delivery details on the left and another order summary on the right.
+- The **user** must populate the form on the left before being able to continue the checkout process.
+- There are required fields in the form and this information will be saved to the DB if the **user** has logged in or creates an account prior to checkout.
+- The credit card field is linked to `STRIPE` and the validation comes from there.
+- Buttons at the bottom allow the **user** to adjust their bag before paying or to go straight to checkout.
+- The right hand column displays the **user** bag information so they are able to double check what they are purchasing.
+- Once the **user** submits the payment information an opaque overlay appears to show that the payment is being processed.
+
+### ELEMENTS SEEN ON CHECKOUT SUCCESS PAGE
+
+- The **user** is presented with a container that summarises their purchase information, order number and contact details.
+- A Bootstrap Toast also displays to say that the order has been processed.
+- A button under the summary directs the **user** to the Events page so they stay on the site for a little longer.
 
 ### <ins>FUTURE FEATURES</ins>
 
