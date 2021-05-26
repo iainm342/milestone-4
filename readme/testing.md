@@ -59,6 +59,8 @@ CSS Errors:
 
 JShint Errors:
 
+- all JS and jQuery has been passed through the Validator, however, various warnings were presented with regards to the $ in jQuery. Searching has shown that some extra code should be added to the .jshintrc to remove these warnings - this is outwith my current knowledge and skill base and will need some further research on my part.
+
 [Back to Contents](#contents)
 
 PEP8 Errors:
