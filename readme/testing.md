@@ -46,31 +46,26 @@ HTML Errors:
 
 All pages passed through the Validator with the following results:
 
-| HTML Page              | Warnings / Errors |
-| ---------------------- | ----------------- |
-| /home/                 | None              |
-| /accounts/login        | None              |
-| /accounts/logout       | None              |
-| /products/1            | None              |
-| /products/add/         | None              |
-| /products/edit/1       | None              |
-| /reviews/add_review/1  | None              |
-| /reviews/edit/review/1 | None              |
-| /profile/              | None              |
-| /profile/order_history | None              |
-| /events/               | None              |
-| /events/add_event/     | None              |
-| /events/edit_event/    | None              |
-| /events/detail/        | None              |
-| /bag/                  | None              |
-
-|
-
-|
-
-|
-
-|
+| HTML Page                   | Warnings / Errors                  |
+| --------------------------- | ---------------------------------- |
+| /home/                      | None                               |
+| /accounts/login/            | None                               |
+| /accounts/logout/           | None                               |
+| /accounts/signup/           | None                               |
+| /products/1/                | None                               |
+| /products/add/              | None                               |
+| /products/edit/1            | None                               |
+| /reviews/add_review/1       | None                               |
+| /reviews/edit/review/1      | None                               |
+| /profile/                   | None                               |
+| /profile/order_history/     | None                               |
+| /events/                    | None                               |
+| /events/add_event/          | None                               |
+| /events/edit_event/         | None                               |
+| /events/detail/             | None                               |
+| /bag/                       | None                               |
+| /checkout/                  | Empty heading - processing overlay |
+| /checkout.checkout_success/ | None                               |
 
 CSS Errors:
 
