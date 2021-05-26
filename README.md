@@ -32,6 +32,7 @@ A live version of the site can be found [here](https://milestone-4-delisw.heroku
 - [Testing](#testing)
 - [Deployment](#deployment)
   - [Hosting](#hosting)
+  - [AWS](#aws)
   - [Local Hosting](#local-hosting)
 - [Credits](#credits)
   - [Images](#images)
@@ -350,18 +351,18 @@ Deployment of the site was achieved by following the steps below:
 - Selected "Settings" from the Heroku App menu.
 - Selected "Reveal Config Vars" and inputed the relevant key/value information for the following:
 
-| Config Var            | Key                                                                                 |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| AWS_SECRET_KEY_ID     | obtained when you set up AWS                                                        |
-| AWS_SECRET_ACCESS_KEY | obtained when you set up AWS                                                        |
-| DATABASE_URL          | created when you provisioned Postgres                                               |
-| EMAIL_HOST_PASS       | obtained from your email provider                                                   |
-| EMAIL_HOST_USER       | your email address                                                                  |
-| SECRET_KEY            | obtained from a [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) |
-| STRIPE_PUBIC_KEY      | obtained from STRIPE                                                                |
-| STRIPE_SECRET_KEY     | obtained from STRIPE                                                                |
-| STRIPE_WH_SECRET      | obtained from STRIPE                                                                |
-| USE_AWS               | True                                                                                |
+| Config Var            | Key                                                                               |
+| --------------------- | --------------------------------------------------------------------------------- |
+| AWS_SECRET_KEY_ID     | obtained when you set up AWS                                                      |
+| AWS_SECRET_ACCESS_KEY | obtained when you set up AWS                                                      |
+| DATABASE_URL          | created when you provisioned Postgres                                             |
+| EMAIL_HOST_PASS       | obtained from your email provider                                                 |
+| EMAIL_HOST_USER       | your email address                                                                |
+| SECRET_KEY            | obtained from [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) |
+| STRIPE_PUBIC_KEY      | obtained from STRIPE                                                              |
+| STRIPE_SECRET_KEY     | obtained from STRIPE                                                              |
+| STRIPE_WH_SECRET      | obtained from STRIPE                                                              |
+| USE_AWS               | True                                                                              |
 
 - Selected "Deploy" from the Heroku App menu.
 - Scrolled down the page and selected "Enable Automatic Deployment".
@@ -369,6 +370,51 @@ Deployment of the site was achieved by following the steps below:
 - Clicked "Deploy Branch" - crossed my fingers and waited!
 - Once site was deployed, clicked "View" to launch the app and be able to view it within the browser.
 - Heroku will now update everytime you push to GitHub.
+
+[Back to Contents](#contents)
+
+### <ins>AWS</ins>
+
+In order for the static css, js and media files to be stored and useable with Heroku, you need to set up an AWS account.
+
+- Go to [AWS](aws.amazon.com) and either log in or create an account.
+- Search for S3.
+- Create a new bucket and ensure that the `Block All Public Access` tickbox is unchecked and click 'Create Bucket`.
+- Click on the Properties tab and enable `Static Website Hosting`. This will allow AWS to host our static files.
+- Input `index.html` and `error.html` in the appropriate fields and hit save.
+- Click on the Properties tab and click CORS configuration and add the below before hitting save:
+  ...
+  [
+  {
+  "AllowedHeaders": [
+  "Authorization"
+  ],
+  "AllowedMethods": [
+  "GET"
+  ],
+  "AllowedOrigins": [
+  "*"
+  ],
+  "ExposeHeaders": []
+  }
+  ]
+  ...
+- Click the Policy Tab and select Policy Generator which creates a security policy for the bucket.
+- The policy type is S3 Bucket Policy and the Action will be `get object`.
+- Copy the ARN (Amazon Resource Name) from the bucket and paste it in the ARN field.
+- Click `Add Statement` and then `Generate Policy`.
+- Copy the generated policy in to the Bucket Policy Editor.
+- Add `/*` at the end of the resource key as this will allow access to all resources in the bucket.
+- Click Save.
+- Click the Access Control tab and set the list object permission to everyone under the Public Access section.
+- Open IAM from the service menu.
+- Create a group for your user to belong to.
+- Create an access policy for you the group which gives access to the S3 bucket.
+- Click the JSON tab and select import managed policy, search for S3 and select S3 Full Access Policy.
+- Create a user, give them programmatic access and attach it to the group.
+- Download the CSV file that is generated as this contains the keys required to use AWS.
+
+- [Back to Contents](#contents)
 
 ### <ins>LOCAL HOSTING</ins>
 
