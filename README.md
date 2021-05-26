@@ -318,6 +318,58 @@ Testing information can be found [here](readme/testing.md).
 
 ### <ins>HOSTING</ins>
 
+The site is hoseted on [Heroku](https://www.heroku.com/home).
+
+Deployment of the site was achieved by following the steps below:
+
+- Created a new repository within GitHub.
+- Opened repository in my IDE of choice - Visual Studio Code - by cloning the repo from GitHub.
+- Created a requirements.txt file by typing `pip3 freeze > requirements.txt` in the terminal which tells Heroku what dependencies are required.
+- Created a Procfile and added `web: gunicorn deli_sw.wsgi:application` to the file.
+- Checked the Procfile to make sure there is no extra line after the first line as this can confuse Heroku.
+- Push the requirements.txt and Procfile to GitHub.
+- Logged in to Heroku and selected "Create New App".
+- Selected the input field "App Name" and gave app a unique name using dashes instead of spaces.
+- Selected the region closest to my location and which was free to use!
+- Clicked "Create App".
+- Clicked "Resources" and typed in Postgres in the Add-ons search bar.
+- Selected Heroku Postgres and provisioned a free Hobby Dev database.
+- Retrieved the Database URL from the hidden Config Vars in "Settings".
+- Pasted the Database URL in the database path in settings.py and removed the local settings.
+- Run migrations to build the database in Postgres.
+- Loaded the JSON files - Categories, Counties, Products with `python manage.py loaddata <JSON filename>`.
+- Created a superuser with `python manage.py createsuperuser` and followed the instructions in the terminal.
+- Removed the Postgres Database URL so it doesn't end up in version control.
+- Typed `heroku config:set DISABLE_COLLECTSTATIC=1` in the terminal to stop Heroku collecting the static files.
+- Pushed all changes to GitHub.
+- Typed `git push heroku master` to push everything to Heroku.
+- Selected "Deploy" from the Heroku App menu.
+- Selected "GitHub" from the "Deployment Method" section of the page.
+- Ensured my GitHub profile name was showing in the "Connect to GitHub" section and inserted my GitHub repo name in the input field and clicked "Search".
+- Once Heroku had found my repo, I clicked "Connect" to complete the link.
+- Selected "Settings" from the Heroku App menu.
+- Selected "Reveal Config Vars" and inputed the relevant key/value information for the following:
+
+| Config Var            | Key                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| AWS_SECRET_KEY_ID     | obtained when you set up AWS                                                        |
+| AWS_SECRET_ACCESS_KEY | obtained when you set up AWS                                                        |
+| DATABASE_URL          | created when you provisioned Postgres                                               |
+| EMAIL_HOST_PASS       | obtained from your email provider                                                   |
+| EMAIL_HOST_USER       | your email address                                                                  |
+| SECRET_KEY            | obtained from a [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) |
+| STRIPE_PUBIC_KEY      | obtained from STRIPE                                                                |
+| STRIPE_SECRET_KEY     | obtained from STRIPE                                                                |
+| STRIPE_WH_SECRET      | obtained from STRIPE                                                                |
+| USE_AWS               | True                                                                                |
+
+- Selected "Deploy" from the Heroku App menu.
+- Scrolled down the page and selected "Enable Automatic Deployment".
+- Selected Master Branch under "Branch Selected".
+- Clicked "Deploy Branch" - crossed my fingers and waited!
+- Once site was deployed, clicked "View" to launch the app and be able to view it within the browser.
+- Heroku will now update everytime you push to GitHub.
+
 ### <ins>LOCAL HOSTING</ins>
 
 If you wish to clone a copy of my project, feel free. You will need to:
@@ -374,7 +426,6 @@ All images and content were taken from the relevant business websites.
 
 - [Code Institute](https://codeinstitute.net/) - main structure and model was taken from the Boutique Ado mini project.
 - [Django Central](https://djangocentral.com/building-a-blog-application-with-django/) - used to initially create the Events app. This was then modified to be more in line with the rest of the project.
-- [Digital Ocean](https://www.digitalocean.com/community/tutorials/django-authentication-with-facebook-instagram-and-linkedin) - used to add the Social log in functionality.
 
 [Back to Contents](#contents)
 
@@ -392,7 +443,3 @@ Thank you to the following people:
 [Back to Contents](#contents)
 
 ---
-
-```
-
-```
