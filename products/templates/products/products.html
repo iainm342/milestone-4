@@ -82,8 +82,8 @@
                         <div class="card-body pb-0">
                             <p class="mb-0 county-name">
                                 <a href="{% url 'products' %}?county={{ product.county.name }}">{{ product.county.friendly_name }}
+                                </a>
                             </p>
-                            </a>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
@@ -150,13 +150,13 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0);
     });
 </script>
 
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);

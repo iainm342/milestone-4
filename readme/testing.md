@@ -46,10 +46,14 @@ HTML Errors:
 
 All pages passed through the Validator with the following results:
 
-| HTML Page | Warnings / Errors |
-| --------- | ----------------- |
-
-|
+| HTML Page             | Warnings / Errors |
+| --------------------- | ----------------- |
+| /home/                | None              |
+| /accounts/login       | None              |
+| /accounts/logout      | None              |
+| /products/1           | None              |
+| /products/edit/1      | None              |
+| /reviews/add_review/1 | None              |
 
 CSS Errors:
 

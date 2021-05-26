@@ -46,8 +46,8 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-md-flex">
             <div class="col-12 col-md-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h1 class="logo-font logo-color-1 my-0">Deli<span class="logo-font logo-color-2 my-0"><strong>
-                                SW</strong></span></h1>
+                    <h2 class="logo-font logo-color-1 my-0">Deli<span class="logo-font logo-color-2 my-0"><strong>
+                                SW</strong></span></h2>
                 </a>
             </div>
             <div class="col-12 col-md-4 my-auto py-1 py-lg-0">
@@ -113,9 +113,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/main-nav.html' %}
-                <a class="logo-font text-white d-block d-md-none" href="{% url 'home' %}" id="home-link">
-                    <h1 class="text-right mt-1">DELI <span class="logo-font logo-color-1 my-0"><strong>
-                                SW</strong></span></h1>
+                <a class="logo-font text-white d-block d-md-none" href="{% url 'home' %}" id="home-link-main">
+                    <h2 class="text-right mt-1">DELI <span class="logo-font logo-color-1 my-0"><strong>
+                                SW</strong></span></h2>
                 </a>
             </nav>
         </div>
@@ -157,7 +157,7 @@
     </footer>
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
