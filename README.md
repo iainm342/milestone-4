@@ -383,7 +383,8 @@ In order for the static css, js and media files to be stored and useable with He
 - Click on the Properties tab and enable `Static Website Hosting`. This will allow AWS to host our static files.
 - Input `index.html` and `error.html` in the appropriate fields and hit save.
 - Click on the Properties tab and click CORS configuration and add the below before hitting save:
-  ...
+
+  ```
   [
   {
   "AllowedHeaders": [
@@ -398,7 +399,8 @@ In order for the static css, js and media files to be stored and useable with He
   "ExposeHeaders": []
   }
   ]
-  ...
+  ```
+
 - Click the Policy Tab and select Policy Generator which creates a security policy for the bucket.
 - The policy type is S3 Bucket Policy and the Action will be `get object`.
 - Copy the ARN (Amazon Resource Name) from the bucket and paste it in the ARN field.
@@ -413,6 +415,10 @@ In order for the static css, js and media files to be stored and useable with He
 - Click the JSON tab and select import managed policy, search for S3 and select S3 Full Access Policy.
 - Create a user, give them programmatic access and attach it to the group.
 - Download the CSV file that is generated as this contains the keys required to use AWS.
+- Install boto3 and django-storages using `pip3 install`.
+- Add the keys to the Config Vars in Django.
+- Create a custom_storage file.
+- Run `python manage.py collectstatic` and transfers the static info to AWS.
 
 - [Back to Contents](#contents)
 
