@@ -81,8 +81,10 @@ All .py files passed through the Validator with the following errors which have 
 | Checkout > urls.py             |                                               | Pass |
 | Checkout > views.py            | Lines 1, 72, 84, 92, 102 too long             | Fail |
 |                                | Line 74 too long and unsure how to resolve it |      |
-| Checkout > webhook_handlers.py | Lines 73, 74, 104 and 104 too long            |      |
-| Checkout > webhooks.py         | Line 43 too long                              |
+| Checkout > webhook_handlers.py | Lines 73, 74, 104 and 104 too long            | Fail |
+|                                | Unsure how to resolve                         |      |
+| Checkout > webhooks.py         | Line 43 too long                              | Fail |
+|                                | Unsure how to resolve                         |      |
 | -----------------              | ---------------------------                   | ---- |
 | Contact > forms.py             |                                               | Pass |
 | Contact > urls.py              |                                               | Pass |
@@ -118,9 +120,12 @@ All .py files passed through the Validator with the following errors which have 
 
 ### <ins>ACCESIBILITY VALIDATION</ins>
 
-The site was tested on the [WAVE](https://wave.webaim.org/) site.
+The site was tested on the [WAVE](https://wave.webaim.org/) site. Passed with minimal contrast errors - both main colours tested against white background.
 
-![Webaim Validation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/webaim.png)
+- #2b4612
+  ![Webaim Validation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/webaim-2b4612.png)
+- #721817
+  ![Webaim Validation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/webaim-721817.png)
 
 [Back to Contents](#contents)
 
