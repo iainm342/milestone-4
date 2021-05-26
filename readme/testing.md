@@ -103,15 +103,21 @@ I submitted the project for Peer Review on Slack. The following comments were ma
 
 ### <ins>USER TESTING</ins>
 
-I asked various friends and family to test the site as **users** and not as coders to gain a different perspective. This happened towards the end of the project to ensure that the User Stories had been met. THe following feedback was given from the group:
+I asked various friends and family to test the site as **users** and not as coders to gain a different perspective. This happened towards the end of the project to ensure that the User Stories had been met. The following feedback was given from the group:
 
 - As a **user**, I want to be able to register as a new user on the site.
-  ![Register](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/register.png)
+  - The **user** click the My Account dropdown icon in the top right of the screen and selects Register from the dropdown list. They are then able to complete the form that is displayed which has 5 fields that need to be completed. Form validation is present with the **user** being unable to sign up unless the form is completed correctly. On pressing the Sign Up button, the **user** is presneted with a Verify Your E-Mail Address screen. The **user** must then check their email and confirm their request to register before they are able to fully access the site. **This requirement is deemed as being completed.**
+    ![Register](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/register.png)
 - As a **user**, I want to be able to log on and off the site after I have registered.
-  ![Log In](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/login.png)
-  ![Log Out](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/logout.png)
+  - The **user** can log on to the system by clicking the My Account icon in the top right of the screen and selecting Login. The **user** is prompted for their username and password. Form validation is present and once the **user** has inputed the information and clicked Sign In, they are redirected to the Home screen and are presented with a Bootstrap Toast confirming they have successfully logged in. **This requirement is deemed as being completed.**
+    - Sign In Screen
+      ![Log In](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/login.png)
+  - The **user** can log out of the system by clicking the My Account icon in the top right of the screen and selecting Logout. The **user** is redirected to the Sign Out screen and is asked to confirm they wish to log out. On clicking the Sign Out button they are redirected to the Home screen and are presented with a Bootstrap Toast confirming they have successfully logged out. **This requirement is deemed as being completed.**
+    - Sign Out Screen
+      ![Log Out](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/logout.png)
 - As a **user**, I want to be able to recover my password if I no longer remember it.
-  ![Recover Password](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/revover-password.png)
+  - The **user** can recover their password, if forgotten, by clicking the `<a>Forgot Password?</a>` underneath the Sign In button. The **user** is asked to input their email address and on cllicking the Reset My Password button, and email will be sent to their email address if it is in the database. On following the link in the email the **user** will be allowed to reset their password and properly Sign In to the full site.
+  - ![Recover Password](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/recover-password.png)
 - As a **user**, I want to receive confirmation emails throughout the registration process.
   ![Registration Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/reg-conf.png)
 - As a **user**, I want to have a personal profile.
