@@ -1,6 +1,6 @@
-# **CODE INSTITUTE: MILESTONE PROJECT 3**
+# **CODE INSTITUTE: MILESTONE PROJECT 4**
 
-# **larder**
+# **DELI SW**
 
 # Testing
 
@@ -63,7 +63,23 @@ JShint Errors:
 
 PEP8 Errors:
 
-![Python Validation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/python-validate.png)
+All .py files passed through the Validator with the following errors which have been resolved:
+
+| Python File                    | Warnings / Errors                             | Pass |
+| ------------------------------ | --------------------------------------------- | ---- |
+| bag > contexts.py              |                                               | Pass |
+| bag > urls.py                  |                                               | Pass |
+| bag > views.py                 | Lines 1, 26 and 45 too long                   | Pass |
+| -----------------              | ---------------------------                   | ---- |
+| checkout > admin.py            |                                               | Pass |
+| checkout > apps.py             |                                               | Pass |
+| checkout > forms.py            |                                               | Pass |
+| checkout > models.py           | Lines 15 and 48 too long                      | Pass |
+| Checkout > signals.py          |                                               | Pass |
+| Checkout > urls.py             |                                               | Pass |
+| Checkout > views.py            | Lines 1, 72, 84, 92, 102 too long             | Fail |
+|                                | Line 74 too long and unsure how to resolve it |      |
+| Checkout > webhook_handlers.py | Lines 73, 74, 104 and 104 too long            |
 
 ### <ins>ACCESIBILITY VALIDATION</ins>
 
