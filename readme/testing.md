@@ -116,27 +116,38 @@ I asked various friends and family to test the site as **users** and not as code
     - Sign Out Screen
       ![Log Out](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/logout.png)
 - As a **user**, I want to be able to recover my password if I no longer remember it.
-  - The **user** can recover their password, if forgotten, by clicking the `<a>Forgot Password?</a>` underneath the Sign In button. The **user** is asked to input their email address and on cllicking the Reset My Password button, and email will be sent to their email address if it is in the database. On following the link in the email the **user** will be allowed to reset their password and properly Sign In to the full site.
+  - The **user** can recover their password, if forgotten, by clicking the `<a>Forgot Password?</a>` underneath the Sign In button. The **user** is asked to input their email address and on cllicking the Reset My Password button, and email will be sent to their email address if it is in the database. On following the link in the email the **user** will be allowed to reset their password and properly Sign In to the full site. **This requirement is deemed as being completed.**
   - ![Recover Password](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/recover-password.png)
 - As a **user**, I want to receive confirmation emails throughout the registration process.
-  ![Registration Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/reg-conf.png)
+  - The **user**, once they have completed the full registration form, will be prompted to check their email inbox for the email verification message. This message, as previously explained, contains a link to confirm their registration on the site. **This requirement is deemed as being completed.**
+    ![Registration Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/reg-conf.png)
 - As a **user**, I want to have a personal profile.
-  ![Profile](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/profile.png)
+  - The **user**, once registered and signed in to the site, is able to view their profile by clicking the My Account button in the top right of the screen and selecting My Profile. The My Profile screen is divided in to two sections - Default Delivery Information and Order History. The **user** can update their delivery information and click the Update Info button. This information is then automatically filled in on the Billing Screen for a better User Experience. Once orders are added to the site, they are saved in the database and are visible to the **user**. The **user** can hover over their mouse over the order number and the full order number will be displayed. Clicking the order number brings the **user** to the order summary screen and a Bootstrap Toast lets them know this is a past order that they are viewing. **This requirement is deemed as being completed.**
+    - Profile Page
+      ![Profile No Order](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/profile-1.png)
+    - Profile Page with Completed Orders
+      ![Profile With Orders](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/profile-2.png)
 - As a **user**, I want to be able to view all the products available for purchase.
-  ![All Products](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/all-products.png)
-- As a **user**, I want to be able to view products by Category.
-  ![View by Category](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-category.png)
+  - The **user** can access the All Products screen by clicking the Shop Now button on the Home page or by selecting All Products from the All Products Dropdown on the central navbar. The **user** is then presented with a card layout showing all the products on the site. Each card contains the product image, name, county, price, category, rating and, dependant on their user rights, the edit and delete buttons. **This requirement is deemed as being completed.**
+    ![All Products](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/all-products.png)
+- As a **user**, I want to be able to view products by Category/Price/Rating.
+  - The **user** is able to sort the All Products screen by either selecting the appropriate dropdown action in the All Products menu or using the filter box in the top right of the main body. The filter box allows the user to view the products in alphabetical/numerical order dependant on which category they have selected and also to reverse the order of their chosen sort method. **This requirement is deemed as being completed.**
+    ![View by Category](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-category.png)
 - As a **user**, I want to be able to see more detailed product information about products I am interested in.
-  ![Product Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/prod-detail.png)
+  - The **user** on clicking a product image on the All Product screen is taken to the relevant product-detil.html page. The product detail page contains the product information along with a more detailed description of the product. The **user** is able to add products to their basket through using the plus/minus buttons, direct entry to the input field or using the arrows within the input field. The **user** is also able to continue shopping from this screen by clicking the Keep Shopping button.
+    ![Product Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/prod-detail.png)
 - As a **user**, I want to be able to view the content, and associated cost, of my "bag" throughout my site use.
-  ![Bag Toast](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/bag-toast.png)
-- As a **user**, I want to be able to sort the products using pre-defined filters.
-  ![Sorting](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/sorting.png)
-- As a **user**, I want to be able to sort a specific Category of product.
-  ![Category Search](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/cat-order-btn.png)
-  ![Category Results](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/cat-order.png)
+  - The **user**, once items have been added to their bag, will be shown a Bootstrap Success message confirming the item(s) addition to the bag. Continued addition of items will increase the information contained in the Toast and the **user** will be able to scroll through their bag without having to leave the product screens. The **user** is also able to click the Go to Secure Checkout button to take them immediately to the full Shopping Bag page.
+    ![Bag Toast](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/bag-toast.png)
+- As a **user**, I want to be able to see all products from a specific County.
+  - The **user** is able to filter all the products by County by clicking the County name on the All Product page or on the Product Detail page. The County name is an <a> tag that contains the url information for the product page.
+    - County <a> Tag
+      ![County Order Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/county-order-btn.png)
+    - Filtered Product Results
+      ![County Order](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/county-order.png)
 - As a **user**, I want to be able to add products to my basket easily.
-  ![Add Product](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-item.png)
+  - The **user** is able to add items to their bag by clicking the plus and minus buttons held within the Product Detail page.
+    ![Add Product](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-item.png)
 - As a **user**, I want to be able to view the items in my basket.
   ![View Basket Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-1.png)
   ![View Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-2.png)
@@ -146,9 +157,23 @@ I asked various friends and family to test the site as **users** and not as code
   ![Payment](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/payment.png)
 - As a **user**, I want to be able to view an order confirmation after checkout.
   ![Order Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/order-conf.png)
+- As a **user**, I want to be able to Add a review for a specific product.
+  ![Add Review Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-1.png)
+  ![Add Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-2.png)
+- As a **user**, I want to be able to Edit a review for a product that I have added.
+  ![Edit Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-1.png)
+  ![Edit Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-2.png)
+- As a **user**, I want to be able to Delete a review for a product that I have added.
+  ![Delete Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-1.png)
+  ![Delete Review Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-2.png)
 - As a **user**, I want to be able to see what events are happening within the region.
   ![Events](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-1.png)
   ![Events Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-2.png)
+- As a **user**, I want to be able to search the site for products using key words.
+  ![Search](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/key-item-search.png)
+  ![Search Results](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/search-results.png)
+- As a **user**, I want the site navigation to be inuitive and easy to use.
+- AS a **user**, I want the information to be displayed in a clear and organised manner to allow for quick decisions to be made.
 - As a **site owner**, I want to be able to Add a product to the site.
   ![Add Product Dropdown](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-1.png)
   ![Add Product Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-2.png)

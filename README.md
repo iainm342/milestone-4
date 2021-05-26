@@ -55,17 +55,22 @@ The main aim of this website is to provide the **user** with an online delicates
 - As a **user**, I want to receive confirmation emails throughout the registration process.
 - As a **user**, I want to have a personal profile.
 - As a **user**, I want to be able to view all the products available for purchase.
-- As a **user**, I want to be able to view products by Category.
+- As a **user**, I want to be able to view products by Category/Price/Rating.
 - As a **user**, I want to be able to see more detailed product information about products I am interested in.
 - As a **user**, I want to be able to view the content, and associated cost, of my "bag" throughout my site use.
-- As a **user**, I want to be able to sort the products using pre-defined filters.
-- As a **user**, I want to be able to sort a specific Category of product.
+- As a **user**, I want to be able to see all products from a specific County.
 - As a **user**, I want to be able to add products to my basket easily.
 - As a **user**, I want to be able to view the items in my basket.
 - As a **user**, I want to be able to adjust the quantity of items in my basket.
 - As a **user**, I want to be able to easily enter my payment details.
 - As a **user**, I want to be able to view an order confirmation after checkout.
+- As a **user**, I want to be able to Add a review for a specific product.
+- As a **user**, I want to be able to Edit a review for a product that I have added.
+- As a **user**, I want to be able to Delete a review for a product that I have added.
 - As a **user**, I want to be able to see what events are happening within the region.
+- As a **user**, I want to be able to search the site for products using key words.
+- As a **user**, I want the site navigation to be inuitive and easy to use.
+- AS a **user**, I want the information to be displayed in a clear and organised manner to allow for quick decisions to be made.
 - As a **site owner**, I want to be able to Add a product to the site.
 - As a **site owner**, I want to be able to Edit a product to the site.
 - As a **site owner**, I want to be able to Delete a product from the site.
