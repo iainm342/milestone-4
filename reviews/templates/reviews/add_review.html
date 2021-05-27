@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!--header-->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -10,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+<!--overlay-->
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -20,7 +22,7 @@
             <hr>
         </div>
     </div>
-
+    <!--renders the review form for the user to add a review-->
     <div class="row pb-5">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2"
