@@ -85,6 +85,11 @@ body {
   padding-bottom: 100px;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .footer {
   font-family: "Bebas Neue";
   position: fixed;
