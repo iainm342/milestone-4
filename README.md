@@ -534,7 +534,8 @@ If you wish to clone a copy of my project, feel free. You will need to:
 
 ### <ins>IMAGES AND TEXT CONTENT</ins>
 
-All images and content were taken from the relevant business websites.
+- All images and content were taken from the relevant business websites.
+- The Map on the Landing Page was purchased from VectorStock - copy of invoce can be found here [invoice](readme/images/wireframes/vs-invoice-10360425.pdf)
 
 ### <ins>IMAGE EDITING</ins>
 
