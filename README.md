@@ -115,7 +115,7 @@ Initial wireframes for the following pages can be found by clicking on the links
 
 - [Mobile](readme/images/wireframes/Mobile-all-products.png) | [Tablet](readme/images/wireframes/Tablet-all-products.png) | [Desktop](readme/images/wireframes/Desktop-all-products.png)
 
-### Product Detail]
+### Product Detail
 
 - [Mobile](readme/images/wireframes/Mobile-product-detail.png) | [Tablet](readme/images/wireframes/Tablet-product-detail.png) | [Desktop](readme/images/wireframes/Desktop-product-detail.png)
 
@@ -251,7 +251,9 @@ Initial wireframes for the following pages can be found by clicking on the links
 
 ### <ins>FUTURE FEATURES</ins>
 
-[Back to Contents](#contents)
+- A newsletter that can be accessed through the Offers & Events dropdown menu along with an automatic email being sent to all registered users.
+- The ability to like/favourite a product and for it to appear at the top of the list when products are sorted or filtered.
+- [Back to Contents](#contents)
 
 ---
 
