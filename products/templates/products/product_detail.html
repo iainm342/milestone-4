@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!--header-->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -10,9 +11,11 @@
 {% endblock %}
 
 {% block content %}
+<!--overlay-->
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
+        <!--renders the image for the product or noimage if none exists-->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
@@ -26,6 +29,7 @@
                 {% endif %}
             </div>
         </div>
+        <!--renders the product information for the product-->
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
@@ -55,6 +59,7 @@
                     <div class="form-row">
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
+                            <!--renders the quantity selector field-->
                             <div class="form-group w-50">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -78,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!--buttons to continue shopping or to add to basket-->
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn btn-outline-red rounded-0 mt-5">
                                 <span class="icon">
@@ -95,6 +100,7 @@
         </div>
     </div>
 </div>
+<!--Add review button-->
 <div class="container">
     <h3 class="text-uppercase text-center text-blue mt-5 mb-3">Reviews</h3>
     <div class="text-center mt-3">
@@ -104,6 +110,7 @@
     </div>
 </div>
 <div class="container">
+    <!--renders any reviews that have been left for the product-->
     <div class="row mt-5 pb-5">
         {% for review in reviews %}
         <div class="col-12 col-lg-4 text-center">
@@ -114,6 +121,7 @@
                 <div class="col">
                     <p class="text-center">{{ review.user }}</p>
                     <p class="text-center mb-0"><small>{{ review.date_posted|date:"d M, Y" }}</small></p>
+                    <!--shows the edit/delete pills if the user is authenticated-->
                     {% if request.user.is_authenticated %}
                     <small class="text-center">
                         <a class="badge badge-warning" href="{% url 'edit_review' review.id %}">Edit</a> |
