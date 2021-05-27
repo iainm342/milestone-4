@@ -81,6 +81,10 @@ body {
   font-family: "Bebas Neue";
 }
 
+#register {
+  padding-bottom: 100px;
+}
+
 .footer {
   font-family: "Bebas Neue";
   position: fixed;
