@@ -6,7 +6,7 @@ from .forms import PostForm
 
 
 def post(request):
-
+    """A view to show all event posts"""
     posts = Post.objects.all()
 
     template = "events/events.html"
@@ -30,6 +30,7 @@ def post_detail(request, slug):
 
 
 def add_post(request):
+    """A view to allow the site owner to add an event post"""
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)
         if form.is_valid():
@@ -50,7 +51,7 @@ def add_post(request):
 
 
 def edit_post(request, slug):
-
+    """A view to delete an event post"""
     post = get_object_or_404(Post, slug=slug)
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES, instance=post)
