@@ -248,41 +248,53 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to add products to my basket easily.
-  - The **user** is able to add items to their bag by clicking the plus and minus buttons held within the Product Detail page.
+  - The **user** is able to add items to their bag by clicking the plus and minus buttons held within the Product Detail page. There are two <a> tags to allow the **user** to quickly update the quantity within the bag or to rmeove the product line from the bag if desired. The location below the quantity input field allows for minimal disruption to the **user** flow.
     ![Add Product](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-item.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to view the items in my basket.
-  ![View Basket Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-1.png)
-  ![View Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-2.png)
+  - The **user** clicks the basket icon in the top right of the page and is taken to the Shopping Bag summary page. The **user** can alter the quantity of a specific product by clicking the plus/minus icons on either side of the input field, manually change the quantity within the field with keyboard input or by using the up/down arrow that appear in the field when hovering.Navigation buttons are visible to alow the **user** to either continue shopping or to move to the Checkout page.
+    - Navbar icon
+      ![View Basket Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-1.png)
+    - Shopping basket
+      ![View Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-2.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to adjust the quantity of items in my basket.
-  ![Adjust Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/basket-adjust.png)
+  - Within all variations of the Shopping Basket page, the **user** can alter the quantity of a product being ordered by clciking th eplus/minus icons on either side of the quantity input field. This alters the quantity ordered value and must be confirmed by clicking the Update <a> tag for it to be confirmed.
+    ![Adjust Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/basket-adjust.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to easily enter my payment details.
-  ![Payment](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/payment.png)
+  - When the **user** reaches the Checout page they are presented with a two column container that has delivery details on the left and another order summary on the right. The delivery details will be pre-populate if the **user** has logged in with active account. If the **user** is not logged in, the order will still be processed but will be done as an Anonymous user. The **user** can log in by clicking the link at the bottom of the screen which will take them to the log in screen and then back to the Shopping Basket. Credit card details are entered in to the bottom field and the field is validated using Stripe. Clicking Complete Order will display an "processing" overlay and then take the **user** to the Checkout Success page. The **user** is able to return to the Shopping Bag page if they wish to amend the order before payment processing.
+    ![Payment](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/payment.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to view an order confirmation after checkout.
+- Once the **user** has clicked the Complete Order button, they are directed to the Checkout Success page which shows a confirmation of their order along with their unique Order Number at the top of the page. The **user** is able to click a button that will take them to the Events page to try and keep them on the site for a longer period of time.
   ![Order Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/order-conf.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to Add a review for a specific product.
-  ![Add Review Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-1.png)
-  ![Add Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-2.png)
+  - From an indiviudal items Product Detail page, the **user** is able to add a review for that product. By cllcking the Add a Review button at the bottom of the Product Detail page, the **user** is redirected to the Add a Review page. This page contains a simple form that will allow them to enter a title, description and rating value. The **user** can cancel this process by clicking the Cancel button or submit the review. The review is then displayed at the bottom of the Product Detail page.
+    - Add Review Button
+      ![Add Review Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-1.png)
+    - Add Review Form
+      ![Add Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-2.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to Edit a review for a product that I have added.
-  ![Edit Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-1.png)
-  ![Edit Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-2.png)
+  - If the **user** is logged in and has added the review in question, or a SuperUser, they will see the Edit/Delete pills underneath the review when it is displayed on the Product Detail Page. By clicking the Edit Pill, the **user** is redirected to the Edit Review form. This form is pre-populated with the review informtion which the **user** can then alter and submit the changes to the DB.
+    - Edit Review Pill
+      ![Edit Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-1.png)
+    - Edit Review Form
+      ![Edit Review Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-2.png)
 
 [Back to Contents](#contents)
 
