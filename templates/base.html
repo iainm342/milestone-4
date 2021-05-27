@@ -15,8 +15,10 @@
     {% endblock %}
 
     {% block corecss %}
+    <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Link to base.css stylesheet-->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -24,10 +26,13 @@
     {% endblock %}
 
     {% block corejs %}
+    <!--Fontawesome CDN-->
     <script src=" https://kit.fontawesome.com/47c6ee5756.js" crossorigin="anonymous">
     </script>
+    <!--JQuery Script-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Bootstrap JS Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
@@ -42,7 +47,9 @@
 </head>
 
 <body>
+    <!--Bootstrap Fixed Heder-->
     <header class="container-fluid fixed-top">
+        <!--Bootstrap Navbar-->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-md-flex">
             <div class="col-12 col-md-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -50,6 +57,7 @@
                                 SW</strong></span></h2>
                 </a>
             </div>
+            <!--Searchbar-->
             <div class="col-12 col-md-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -65,6 +73,7 @@
                     </div>
                 </form>
             </div>
+            <!--Navbar icons-->
             <div class="col-12 col-md-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -75,6 +84,7 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
+                        <!--Django logic for log in and access levels-->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
@@ -88,6 +98,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!--Shopping Basket-->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-blue{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
@@ -106,6 +117,7 @@
                 </ul>
             </div>
         </div>
+        <!--Bootstrap Navbar-->
         <div class="row bg-blue text-white">
             <nav class="nav navbar navbar-expand-md navbar-dark w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -126,6 +138,7 @@
         </div>
     </header>
 
+    <!--Bootstrap Toasts-->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
