@@ -227,19 +227,19 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to see more detailed product information about products I am interested in.
-  - The **user** on clicking a product image on the All Product screen is taken to the relevant product-detil.html page. The product detail page contains the product information along with a more detailed description of the product. The **user** is able to add products to their basket through using the plus/minus buttons, direct entry to the input field or using the arrows within the input field. The **user** is also able to continue shopping from this screen by clicking the Keep Shopping button.
+  - The **user** on clicking a product image on the All Product screen is taken to the relevant product-detil.html page. The product detail page contains the product information along with a more detailed description of the product. The **user** is able to add products to their basket through using the plus/minus buttons, direct entry to the input field or using the arrows within the input field. The **user** is also able to continue shopping from this screen by clicking the Keep Shopping button. **This requirement is deemed as being completed.**
     ![Product Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/prod-detail.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to view the content, and associated cost, of my "bag" throughout my site use.
-  - The **user**, once items have been added to their bag, will be shown a Bootstrap Success message confirming the item(s) addition to the bag. Continued addition of items will increase the information contained in the Toast and the **user** will be able to scroll through their bag without having to leave the product screens. The **user** is also able to click the Go to Secure Checkout button to take them immediately to the full Shopping Bag page.
+  - The **user**, once items have been added to their bag, will be shown a Bootstrap Success message confirming the item(s) addition to the bag. Continued addition of items will increase the information contained in the Toast and the **user** will be able to scroll through their bag without having to leave the product screens. The **user** is also able to click the Go to Secure Checkout button to take them immediately to the full Shopping Bag page. **This requirement is deemed as being completed.**
     ![Bag Toast](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/bag-toast.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to see all products from a specific County.
-  - The **user** is able to filter all the products by County by clicking the County name on the All Product page or on the Product Detail page. The County name is an <a> tag that contains the url information for the product page.
+  - The **user** is able to filter all the products by County by clicking the County name on the All Product page or on the Product Detail page. The County name is an <a> tag that contains the url information for the product page. **This requirement is deemed as being completed.**
     - County <a> Tag
       ![County Order Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/county-order-btn.png)
     - Filtered Product Results
@@ -248,13 +248,13 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to add products to my basket easily.
-  - The **user** is able to add items to their bag by clicking the plus and minus buttons held within the Product Detail page. There are two <a> tags to allow the **user** to quickly update the quantity within the bag or to rmeove the product line from the bag if desired. The location below the quantity input field allows for minimal disruption to the **user** flow.
+  - The **user** is able to add items to their bag by clicking the plus and minus buttons held within the Product Detail page. There are two <a> tags to allow the **user** to quickly update the quantity within the bag or to rmeove the product line from the bag if desired. The location below the quantity input field allows for minimal disruption to the **user** flow. **This requirement is deemed as being completed.**
     ![Add Product](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-item.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to view the items in my basket.
-  - The **user** clicks the basket icon in the top right of the page and is taken to the Shopping Bag summary page. The **user** can alter the quantity of a specific product by clicking the plus/minus icons on either side of the input field, manually change the quantity within the field with keyboard input or by using the up/down arrow that appear in the field when hovering.Navigation buttons are visible to alow the **user** to either continue shopping or to move to the Checkout page.
+  - The **user** clicks the basket icon in the top right of the page and is taken to the Shopping Bag summary page. The **user** can alter the quantity of a specific product by clicking the plus/minus icons on either side of the input field, manually change the quantity within the field with keyboard input or by using the up/down arrow that appear in the field when hovering.Navigation buttons are visible to alow the **user** to either continue shopping or to move to the Checkout page. **This requirement is deemed as being completed.**
     - Navbar icon
       ![View Basket Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/view-basket-1.png)
     - Shopping basket
@@ -263,25 +263,25 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to adjust the quantity of items in my basket.
-  - Within all variations of the Shopping Basket page, the **user** can alter the quantity of a product being ordered by clciking th eplus/minus icons on either side of the quantity input field. This alters the quantity ordered value and must be confirmed by clicking the Update <a> tag for it to be confirmed.
+  - Within all variations of the Shopping Basket page, the **user** can alter the quantity of a product being ordered by clciking th eplus/minus icons on either side of the quantity input field. This alters the quantity ordered value and must be confirmed by clicking the Update <a> tag for it to be confirmed. **This requirement is deemed as being completed.**
     ![Adjust Basket](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/basket-adjust.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to easily enter my payment details.
-  - When the **user** reaches the Checout page they are presented with a two column container that has delivery details on the left and another order summary on the right. The delivery details will be pre-populate if the **user** has logged in with active account. If the **user** is not logged in, the order will still be processed but will be done as an Anonymous user. The **user** can log in by clicking the link at the bottom of the screen which will take them to the log in screen and then back to the Shopping Basket. Credit card details are entered in to the bottom field and the field is validated using Stripe. Clicking Complete Order will display an "processing" overlay and then take the **user** to the Checkout Success page. The **user** is able to return to the Shopping Bag page if they wish to amend the order before payment processing.
+  - When the **user** reaches the Checout page they are presented with a two column container that has delivery details on the left and another order summary on the right. The delivery details will be pre-populate if the **user** has logged in with active account. If the **user** is not logged in, the order will still be processed but will be done as an Anonymous user. The **user** can log in by clicking the link at the bottom of the screen which will take them to the log in screen and then back to the Shopping Basket. Credit card details are entered in to the bottom field and the field is validated using Stripe. Clicking Complete Order will display an "processing" overlay and then take the **user** to the Checkout Success page. The **user** is able to return to the Shopping Bag page if they wish to amend the order before payment processing. **This requirement is deemed as being completed.**
     ![Payment](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/payment.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to view an order confirmation after checkout.
-- Once the **user** has clicked the Complete Order button, they are directed to the Checkout Success page which shows a confirmation of their order along with their unique Order Number at the top of the page. The **user** is able to click a button that will take them to the Events page to try and keep them on the site for a longer period of time.
+- Once the **user** has clicked the Complete Order button, they are directed to the Checkout Success page which shows a confirmation of their order along with their unique Order Number at the top of the page. The **user** is able to click a button that will take them to the Events page to try and keep them on the site for a longer period of time. **This requirement is deemed as being completed.**
   ![Order Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/order-conf.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to Add a review for a specific product.
-  - From an indiviudal items Product Detail page, the **user** is able to add a review for that product. By cllcking the Add a Review button at the bottom of the Product Detail page, the **user** is redirected to the Add a Review page. This page contains a simple form that will allow them to enter a title, description and rating value. The **user** can cancel this process by clicking the Cancel button or submit the review. The review is then displayed at the bottom of the Product Detail page.
+  - From an indiviudal items Product Detail page, the **user** is able to add a review for that product. By cllcking the Add a Review button at the bottom of the Product Detail page, the **user** is redirected to the Add a Review page. This page contains a simple form that will allow them to enter a title, description and rating value. The **user** can cancel this process by clicking the Cancel button or submit the review. The review is then displayed at the bottom of the Product Detail page. **This requirement is deemed as being completed.**
     - Add Review Button
       ![Add Review Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-review-1.png)
     - Add Review Form
@@ -290,7 +290,7 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to Edit a review for a product that I have added.
-  - If the **user** is logged in and has added the review in question, or a SuperUser, they will see the Edit/Delete pills underneath the review when it is displayed on the Product Detail Page. By clicking the Edit Pill, the **user** is redirected to the Edit Review form. This form is pre-populated with the review informtion which the **user** can then alter and submit the changes to the DB.
+  - If the **user** is logged in and has added the review in question, or a SuperUser, they will see the Edit/Delete pills underneath the review when it is displayed on the Product Detail Page. By clicking the Edit Pill, the **user** is redirected to the Edit Review form. This form is pre-populated with the review informtion which the **user** can then alter and submit the changes to the DB. **This requirement is deemed as being completed.**
     - Edit Review Pill
       ![Edit Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-review-1.png)
     - Edit Review Form
@@ -299,63 +299,92 @@ I asked various friends and family to test the site as **users** and not as code
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to Delete a review for a product that I have added.
-  ![Delete Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-1.png)
-  ![Delete Review Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-2.png)
+  - The **user** must be logged in and written the review, or is a SuperUser. The delete pill will sit underneath the relevant review and on clicking will remove the review from the DB. A Bootstrap Toast will confirm that the action has been successful. **This requirement is deemed as being completed.**
+    - Delete Review Pill
+      ![Delete Review Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-1.png)
+    - Deltetion Toast Confirmation
+      ![Delete Review Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-review-2.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to see what events are happening within the region.
-  ![Events](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-1.png)
-  ![Events Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-2.png)
+  - The **user** can navigate to the Events page py clicking the Events & Offers link in the Navigation bar and selecting Events. The **user** will be redirected to the Events page and will be presented with multiple Bootstrap cards that will contain a hero image for the event, a title and a Read More... button. The card body wil contain a truncated version of the Event Detail content. Clicking the Read More button will redirect the **user** to the Event Detail page which will reveal all of the event dexscription content. There is a Back button on the Event Description page which allows the **user** to navigate to the Event page. **This requirement is deemed as being completed.**
+    - Events Page
+      ![Events](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-1.png)
+    - Event Detail Page
+      ![Events Detail](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/events-2.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want to be able to search the site for products using key words.
-  ![Search](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/key-item-search.png)
-  ![Search Results](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/search-results.png)
+  - The **user** is able to query the DB by inputing search parameters in to the search bar located at the top of the main nav bar at the top of screen. The search field has validation that will notify the user if there is no search parameters inputed. The search function, and the **user** keyword parameters, are linked to the name, description and county fields of the products contained within the DB. The resuls of the search will be displayed with a confirmation of how many products were found and what the search parameter was. **This requirement is deemed as being completed.**
+    - Search Bar
+      ![Search](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/key-item-search.png)
+    - Search results
+      ![Search Results](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/search-results.png)
 
 [Back to Contents](#contents)
 
 - As a **user**, I want the site navigation to be inuitive and easy to use.
+  - The users felt that the site was easy to navigate and that fulfilled the above requirement. **This rquirement is deemed as being completed.**
 
 [Back to Contents](#contents)
 
 - AS a **user**, I want the information to be displayed in a clear and organised manner to allow for quick decisions to be made.
+  - The **users** felt the white background with the straps of colour worked well and made the site easy to look at and to navigate. **This rquirement is deemed as being completed.**
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Add a product to the site.
-  ![Add Product Dropdown](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-1.png)
-  ![Add Product Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-2.png)
+  - The **site owner** will be authorised as a SuperUser and will be able to access the Product Management part of the site by clicking the My Account nav item on the main navbar. The **site owner** will be presented with a form that has mandatory fields that will need to be completed before the new product can be added to the DB. Each field has validation supplied through the model. The Category and County fields are link with the Product so are dropdown item to ensure the correct option is selected. The Add Product button submits the form and the Cancel button returns the **site owner** to the All Products page. **This requirement is deemed as being completed.**
+    - Nav Bar Dropdown
+      ![Add Product Dropdown](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-1.png)
+    - Add Product Page
+      ![Add Product Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-product-2.png)
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Edit a product to the site.
-  ![Edit Product Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-product-1.png)
-  ![Edit Product Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-product-2.png)
+  - If the **site owner** is logged in as a SuperUser, they will see the Edit/Delete pills underneath the product when it is displayed on the All Product and Product Detail Page. By clicking the Edit Pill, the **user** is redirected to the Edit Product form. This form is pre-populated with the prodcut informtion which the **user** can then alter and submit the changes to the DB. **This requirement is deemed as being completed.**
+    - Edit Product Pill
+      ![Edit Product Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-product-1.png)
+  - edit Product Page
+    ![Edit Product Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-product-2.png)
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Delete a product from the site.
-  ![Delete Product Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-product-1.png)
-  ![Delete Product Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-product-2.png)
+  - The **site owner** must be logged in as a SuperUser. The delete pill will sit underneath the relevant product in both the All Product and Product Detail pages and on clicking will remove the product from the DB. A Bootstrap Toast will confirm that the action has been successful. **This requirement is deemed as being completed.**
+  - Delete Product Pill
+    ![Delete Product Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-product-1.png)
+  - Delete Product Confirmation
+    ![Delete Product Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-product-2.png)
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Add an event to the site.
-  ![Add Event Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-event-1.png)
-  ![Add Event Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-event-2.png)
+  - The **site owner** will be authorised as a SuperUser and will be able to access the Add an Event page by clicking the Add Event button on the Events Page. This will appear just under the nav bar in the centre of the page. On clicking the button, the **site owner** will be taken to the Add an Event page. This page comprises of a form, again with validation, with title, author, content and a select image option to allow the creation of the Bootstrap card. The Add Event button submits the form and the Cancel button returns the **site owner** to the Events page. **This requirement is deemed as being completed.**
+    - Add Event button
+      ![Add Event Button](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-event-1.png)
+    - Add Event Page
+      ![Add Event Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/add-event-2.png)
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Edit an event on the site.
-  ![Edit Event Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-event-1.png)
-  ![Edit Event Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-event-2.png)
+  - If the **site owner** is logged in as a SuperUser, they will see the Edit/Delete pills underneath the event when it is displayed on the Event Page. By clicking the Edit Pill, the **site owner** is redirected to the Edit Event form. This form is pre-populated with the event informtion which the **user** can then alter and submit the changes to the DB. **This requirement is deemed as being completed.**
+    - Edit Event |Pill
+      ![Edit Event Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-event-1.png)
+    - Edit Event Page
+      ![Edit Event Screen](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/edit-event-2.png)
 
 [Back to Contents](#contents)
 
 - As a **site owner**, I want to be able to Delete an event from the site.
-  ![Delete Event Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-event-1.png)
-  ![Delete Event Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-event-2.png)
+  - The **site owner** must be logged in as a SuperUser. The delete pill will sit underneath the relevant event in Event page and on clicking will remove the event from the DB. A Bootstrap Toast will confirm that the action has been successful. **This requirement is deemed as being completed.**
+    - Delete Event Pill
+      ![Delete Event Pill](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-event-1.png)
+    - Delete Event Page
+      ![Delete Event Confirmation](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/delete-event-2.png)
 
 [Back to Contents](#contents)
