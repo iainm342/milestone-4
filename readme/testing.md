@@ -171,6 +171,22 @@ The site was tested on the following browsers that I have access to:
 
 I submitted the project for Peer Review on Slack. The following comments were made:
 
+"your sites purpose is to showcase the food and drink from the South East of England but the flags you've used on your homepage are a little misrepresentative of that." This was a fair point as you wouldn't have known that this was the point of the site unless you read the readme.md. I added text to give a clearer purpose for the site.
+
+I asked my fellow May 2020'ers to have a look and the feedback was generally positive along with some feedback which helped:
+
+- "need top and bottom padding on the footer, half the words are cut off at the bottom". This is now fixed and all text shows on all screen sizes.
+
+![Copyright](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/copyright.png)
+
+- "the registration buttons get cut off, I can't scroll down to them". This was in fact the case with most of the forms on mobile. This has now been reslved.
+
+![Registration](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/register-padding.png)
+
+- "the contrast of the footer icons is a bit off". I have replaced the hover colour to #f49f42 which is a more pleasing combination.
+
+![Contrast](https://github.com/iainm342/milestone-4/blob/master/readme/images/testing/footer-contrast.png)
+
 [Back to Contents](#contents)
 
 ### <ins>USER TESTING</ins>
