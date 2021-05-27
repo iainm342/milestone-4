@@ -98,7 +98,7 @@ body {
 }
 
 #footer:hover {
-  height: 100px;
+  height: 120px;
 }
 
 a.email {
@@ -106,7 +106,7 @@ a.email {
 }
 
 .email:hover {
-  color: #2b4162;
+  color: #f49f42;
 }
 
 a.social {
@@ -114,7 +114,7 @@ a.social {
 }
 
 a.social:hover {
-  color: #2b4162;
+  color: #f49f42;
 }
 
 .shop-now-button {
