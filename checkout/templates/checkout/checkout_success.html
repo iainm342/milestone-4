@@ -15,7 +15,7 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container pb-5">
     <div class="row">
         <div class="col">
             <hr>
@@ -202,11 +202,11 @@
                 <span class="text-uppercase">Back to Profile</span>
             </a>
             {% else %}
-            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-blue rounded-0 my-2">
+            <a href="{% url 'events' %}" class="btn btn-blue rounded-0 my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-gifts"></i>
                 </span>
-                <span class="text-uppercase">Now check out the latest deals!</span>
+                <span class="text-uppercase">Now check out the latest events!</span>
             </a>
             {% endif %}
         </div>
