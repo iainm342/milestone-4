@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!--header-->
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
@@ -10,8 +11,10 @@
 {% endblock %}
 
 {% block content %}
+<!--overlay-->
 <div class="overlay"></div>
 <div class="container-fluid">
+
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
@@ -24,6 +27,7 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <!--sort functionality on product screen-->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
@@ -52,6 +56,7 @@
                         </select>
                     </div>
                 </div>
+                <!--tells the user how many products were found for the search term that they entered-->
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -62,6 +67,7 @@
                     </p>
                 </div>
             </div>
+            <!--renders the Bootstrap cards for the items found-->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -103,6 +109,7 @@
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
+                                    <!--shows the edit/delete pills if the user is a superuser-->
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a class="badge badge-warning"
@@ -116,6 +123,7 @@
                         </div>
                     </div>
                 </div>
+                <!--renders an <hr> between the card rows-->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
@@ -141,6 +149,7 @@
         </div>
     </div>
 </div>
+<!--Back to top button-->
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
