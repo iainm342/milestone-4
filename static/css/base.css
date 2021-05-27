@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 
+/*----------------------------------------------------General formatting for all pages*/
+
 html {
   height: 100%;
 }
@@ -31,6 +33,8 @@ body {
   height: 1.5rem;
   width: 1.5rem;
 }
+
+/*----------------------------------------------------NavBar styling*/
 
 .icon-color,
 .text-color {
@@ -69,10 +73,6 @@ body {
   color: #2b4162;
 }
 
-.jumbotron {
-  background-color: white;
-}
-
 .nav-item {
   font-family: "Bebas Neue";
 }
@@ -84,6 +84,8 @@ body {
 #register {
   padding-bottom: 100px;
 }
+
+/*----------------------------------------------------Footer styling*/
 
 ul {
   padding: 0;
@@ -125,6 +127,8 @@ a.social {
 a.social:hover {
   color: #f49f42;
 }
+
+/*----------------------------------------------------Button styling*/
 
 .shop-now-button {
   background: #721817;
@@ -169,18 +173,6 @@ a.social:hover {
   color: #fff;
 }
 
-.text-black {
-  color: #000 !important;
-}
-
-.border-black {
-  border: 1px solid black !important;
-}
-
-.bg-black {
-  background: #000 !important;
-}
-
 .overlay {
   height: 100%;
   width: 100%;
@@ -195,6 +187,8 @@ a.category-badge > span.badge:hover {
   background: #212529 !important;
   color: #fff !important;
 }
+
+/*----------------------------------------------------Back to Top Button*/
 
 .btt-button {
   height: 30px;
@@ -325,7 +319,7 @@ input[name="q"]::placeholder {
   }
 }
 
-/* Allauth form formatting */
+/*----------------------------------------------------Allauth form formatting*/
 
 .allauth-form-inner-content p {
   margin-top: 1.5rem;
